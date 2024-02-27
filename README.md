@@ -1,2 +1,2 @@
 # serbian-railways
-The interactive map of serbian railways
+The metro-like map of serbian suburban train lines
