@@ -7,9 +7,9 @@
    width="940.32001"
    height="1365.12"
    viewBox="0 0 940.32001 1365.12"
-   sodipodi:docname="serbian_railways.svg"
+   sodipodi:docname="map.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   inkscape:export-filename="/home/nikolai/MyProjects/serbian-railways/serbian_railways.png"
+   inkscape:export-filename="/home/nikolai/MyProjects/serbian-railways/map.png"
    inkscape:export-xdpi="250.02553"
    inkscape:export-ydpi="250.02553"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -661,15 +661,15 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:snap-midpoints="false"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="172"
-     inkscape:cy="691.99998"
+     inkscape:zoom="2"
+     inkscape:cx="276.49999"
+     inkscape:cy="501.99999"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer4" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -1013,7 +1013,7 @@
            transform="translate(116.3832,175.26624)"><tspan
              x="614.58203"
              y="146.1769"
-             id="tspan2802">50 km</tspan></text>
+             id="tspan4662">50 km</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -1024,10 +1024,10 @@
          y="0"><tspan
            x="642.7671"
            y="129.34346"
-           id="tspan2804">Map of Serbian suburban train lines </tspan><tspan
+           id="tspan4664">Map of Serbian suburban train lines </tspan><tspan
            x="702.16958"
            y="151.38635"
-           id="tspan2806">operated by SrbijaVoz</tspan></text>
+           id="tspan4666">operated by SrbijaVoz</tspan></text>
       <g
          id="g113547"
          transform="translate(32.531361,8.2823132)"
@@ -1039,7 +1039,7 @@
            transform="translate(-21.409921,97.269284)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2808">Last update: 2024-02-28</tspan></text>
+             id="tspan4668">Last update: 2024-02-28</tspan></text>
         <text
            xml:space="preserve"
            id="text3267"
@@ -1047,7 +1047,7 @@
            transform="translate(-530.01733,1190.4938)"><tspan
              x="614.58203"
              y="140.11103"
-             id="tspan2810">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
+             id="tspan4670">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
         <text
            xml:space="preserve"
            id="text3267-4"
@@ -1055,7 +1055,7 @@
            transform="translate(-530.16133,1200.7587)"><tspan
              x="614.58203"
              y="140.11103"
-             id="tspan2812">Contact: telegram @nikolai_622</tspan></text>
+             id="tspan4672">Contact: telegram @nikolai_622</tspan></text>
       </g>
       <g
          id="g113531"
@@ -1092,7 +1092,7 @@
            transform="translate(35.796304,3.2696289)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2814">— terminal station</tspan></text>
+             id="tspan4674">— terminal station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-6"
@@ -1100,7 +1100,7 @@
            transform="translate(35.796304,21.742042)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2816">— transfer station</tspan></text>
+             id="tspan4676">— transfer station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-0"
@@ -1108,7 +1108,7 @@
            transform="translate(35.796304,40.214454)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2818">— other significant station</tspan></text>
+             id="tspan4678">— other significant station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-3"
@@ -1116,7 +1116,7 @@
            transform="translate(35.918701,61.753516)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2820">— terminal station for some trains</tspan></text>
+             id="tspan4680">— terminal station for some trains</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
@@ -1869,7 +1869,7 @@
          x="393.27429"
          y="280.49634"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle"
-         id="tspan54453-6-10">Zrenkanin</tspan></text>
+         id="tspan54453-6-10">Zrenjanin</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
