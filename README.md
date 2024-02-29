@@ -1,8 +1,10 @@
-# Map of Serbian suburban train lines operated by SrbijaVoz
+# "Metro-like" map of Serbian suburban train lines operated by SrbijaVoz
 
-Deploy: https://serbian-railways.netlify.app/map.png
+Full size and download: https://serbian-railways.netlify.app/map.png
 
-Last update: 2024-02-28
+<img src="https://serbian-railways.netlify.app/map.png" width="200"/>
+
+Last update: 2024-02-29
 
 Inspired by map of Serbian Railways made by Maximilian Dörrbecker
 
