@@ -8,4 +8,6 @@ Last update: 2024-02-29
 
 Inspired by map of Serbian Railways made by Maximilian Dörrbecker
 
+License: [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
 Contact: telegram @nikolai_622
