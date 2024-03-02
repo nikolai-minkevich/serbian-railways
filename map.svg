@@ -662,14 +662,14 @@
      showgrid="false"
      inkscape:snap-midpoints="false"
      inkscape:zoom="2"
-     inkscape:cx="276.49999"
-     inkscape:cy="501.99999"
+     inkscape:cx="143.5"
+     inkscape:cy="281"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="layer1" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -762,10 +762,10 @@
        sodipodi:nodetypes="ccccccccc" />
     <path
        style="fill:none;stroke:#aa0000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 203.85612,67.335937 c -1.83983,-1.202453 -3.68077,-2.405632 -11.52629,1.970392 -7.84553,4.376024 -21.6943,14.331998 -31.56612,23.409126 -9.87182,9.077125 -15.76568,17.274535 -25.92813,27.196065 -10.16244,9.92154 -24.59319,21.56692 -33.74015,28.99991 -9.146966,7.43299 -13.009463,10.65305 -16.356136,13.78735 -3.346673,3.1343 -6.177178,6.18253 -7.011968,10.04413 -0.834789,3.86161 0.325898,8.53523 1.669433,16.68238 1.343535,8.14715 2.869988,19.76748 3.62706,27.04763 0.757073,7.28015 0.744857,10.21971 0.151921,13.51266 -0.592937,3.29296 -1.766373,6.93951 -1.283815,8.18163 0.482558,1.24212 2.620564,0.0805 4.798664,0.96078 2.1781,0.88029 4.395672,3.80119 8.043445,6.46711 3.647772,2.66592 8.725206,5.07725 12.965746,5.10563 4.24053,0.0284 7.64489,-2.3255 10.47541,-0.64527 2.83053,1.68022 5.08677,7.39318 10.31852,14.50837 5.23176,7.11519 13.43828,15.63241 19.26377,21.27498 5.82549,5.64257 9.26951,8.41029 13.36124,9.73746 4.09174,1.32716 8.83113,1.21468 15.53698,4.50778 6.70585,3.2931 15.37759,9.99062 21.24309,14.00551 5.86549,4.01489 8.92428,5.34725 12.53124,4.60787 3.60697,-0.73938 7.76278,-3.54981 11.91843,-6.36014"
+       d="m 203.85612,67.335937 c -1.83983,-1.202453 -3.68077,-2.405632 -11.52629,1.970392 -7.84553,4.376024 -21.6943,14.331998 -31.56612,23.409126 -9.87182,9.077125 -15.76568,17.274535 -25.92813,27.196065 -10.16244,9.92154 -24.59319,21.56692 -33.74015,28.99991 -9.146966,7.43299 -13.009463,10.65305 -16.356136,13.78735 -3.346673,3.1343 -6.177178,6.18253 -7.011968,10.04413 -0.834789,3.86161 0.325898,8.53523 1.669433,16.68238 1.343535,8.14715 2.869988,19.76748 3.62706,27.04763 0.757073,7.28015 0.744857,10.21971 0.151921,13.51266 -0.592937,3.29296 -1.766373,6.93951 -1.283815,8.18163 0.482558,1.24212 2.620564,0.0805 4.798664,0.96078 2.1781,0.88029 4.395672,3.80119 8.043445,6.46711 3.647772,2.66592 8.725206,5.07725 12.965746,5.10563 4.24053,0.0284 7.64489,-2.3255 10.47541,-0.64527 2.83053,1.68022 5.08677,7.39318 10.31852,14.50837 5.23176,7.11519 13.43828,15.63241 19.26377,21.27498 5.82549,5.64257 9.26951,8.41029 13.36124,9.73746 4.09174,1.32716 8.83113,1.21468 15.53698,4.50778 6.70585,3.2931 15.37759,9.99062 21.24309,14.00551 5.86549,4.01489 8.92428,5.34725 14.83888,5.78116 5.91459,0.4339 14.68477,-0.0301 23.45415,-0.49415"
        id="path2004"
        inkscape:path-effect="#path-effect2006"
-       inkscape:original-d="m 203.85612,67.335937 c -1.83999,-1.202207 -3.68093,-2.405389 -5.52295,-3.60962 -13.84805,9.957171 -27.69683,19.913143 -41.54716,29.868513 -5.89298,8.19857 -11.78685,16.39597 -17.68195,24.59271 -14.43004,11.64661 -28.86079,23.29199 -43.293124,34.93684 -3.861572,3.22112 -7.724068,6.44118 -11.587717,9.66037 -2.829562,3.04929 -5.660067,6.09752 -8.491686,9.14487 1.161711,4.67472 2.322399,9.34834 3.482133,14.02115 1.527482,11.62156 3.053934,23.24189 4.579447,34.86168 -0.01122,2.94062 -0.02343,5.88018 -0.03665,8.81885 -1.17246,3.64763 -2.345896,7.29418 -3.52038,10.93987 2.139049,-1.16065 4.277055,-2.32228 6.414146,-3.48496 2.218614,2.92195 4.436184,5.84285 6.652843,8.76286 5.078533,2.41237 10.155968,4.8237 15.232598,7.23413 3.40543,-2.35294 6.80979,-4.70682 10.21329,-7.06181 2.25729,5.71408 4.51353,11.42704 6.76885,17.13923 8.20768,8.51838 16.4142,17.0356 24.62004,25.55215 3.44502,2.76873 6.88904,5.53645 10.33206,8.30317 4.74057,-0.11149 9.47996,-0.22397 14.21844,-0.33745 8.67309,6.6988 17.34483,13.39633 26.01575,20.09299 3.05997,1.33345 6.11876,2.66581 9.17673,3.99725 4.15695,-2.80953 8.31276,-5.61996 12.46763,-8.43144"
+       inkscape:original-d="m 203.85612,67.335937 c -1.83999,-1.202207 -3.68093,-2.405389 -5.52295,-3.60962 -13.84805,9.957171 -27.69683,19.913143 -41.54716,29.868513 -5.89298,8.19857 -11.78685,16.39597 -17.68195,24.59271 -14.43004,11.64661 -28.86079,23.29199 -43.293124,34.93684 -3.861572,3.22112 -7.724068,6.44118 -11.587717,9.66037 -2.829562,3.04929 -5.660067,6.09752 -8.491686,9.14487 1.161711,4.67472 2.322399,9.34834 3.482133,14.02115 1.527482,11.62156 3.053934,23.24189 4.579447,34.86168 -0.01122,2.94062 -0.02343,5.88018 -0.03665,8.81885 -1.17246,3.64763 -2.345896,7.29418 -3.52038,10.93987 2.139049,-1.16065 4.277055,-2.32228 6.414146,-3.48496 2.218614,2.92195 4.436184,5.84285 6.652843,8.76286 5.078533,2.41237 10.155968,4.8237 15.232598,7.23413 3.40543,-2.35294 6.80979,-4.70682 10.21329,-7.06181 2.25729,5.71408 4.51353,11.42704 6.76885,17.13923 8.20768,8.51838 16.4142,17.0356 24.62004,25.55215 3.44502,2.76873 6.88904,5.53645 10.33206,8.30317 4.74057,-0.11149 9.47996,-0.22397 14.21844,-0.33745 8.67309,6.6988 17.34483,13.39633 26.01575,20.09299 3.05997,1.33345 6.11876,2.66581 9.17673,3.99725 8.77149,-0.46306 17.54167,-0.92711 26.31099,-1.39216"
        sodipodi:nodetypes="cccccccccccccccccccccc" />
     <path
        style="fill:none;stroke:#008000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1013,7 +1013,7 @@
            transform="translate(116.3832,175.26624)"><tspan
              x="614.58203"
              y="146.1769"
-             id="tspan4662">50 km</tspan></text>
+             id="tspan1836">50 km</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -1024,10 +1024,10 @@
          y="0"><tspan
            x="642.7671"
            y="129.34346"
-           id="tspan4664">Map of Serbian suburban train lines </tspan><tspan
+           id="tspan1838">Map of Serbian suburban train lines </tspan><tspan
            x="702.16958"
            y="151.38635"
-           id="tspan4666">operated by SrbijaVoz</tspan></text>
+           id="tspan1840">operated by SrbijaVoz</tspan></text>
       <g
          id="g113547"
          transform="translate(32.531361,8.2823132)"
@@ -1039,7 +1039,7 @@
            transform="translate(-21.409921,97.269284)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan4668">Last update: 2024-02-28</tspan></text>
+             id="tspan1842">Last update: 2024-02-28</tspan></text>
         <text
            xml:space="preserve"
            id="text3267"
@@ -1047,7 +1047,7 @@
            transform="translate(-530.01733,1190.4938)"><tspan
              x="614.58203"
              y="140.11103"
-             id="tspan4670">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
+             id="tspan1844">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
         <text
            xml:space="preserve"
            id="text3267-4"
@@ -1055,7 +1055,7 @@
            transform="translate(-530.16133,1200.7587)"><tspan
              x="614.58203"
              y="140.11103"
-             id="tspan4672">Contact: telegram @nikolai_622</tspan></text>
+             id="tspan1846">Contact: telegram @nikolai_622</tspan></text>
       </g>
       <g
          id="g113531"
@@ -1092,7 +1092,7 @@
            transform="translate(35.796304,3.2696289)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan4674">— terminal station</tspan></text>
+             id="tspan1848">— terminal station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-6"
@@ -1100,7 +1100,7 @@
            transform="translate(35.796304,21.742042)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan4676">— transfer station</tspan></text>
+             id="tspan1850">— transfer station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-0"
@@ -1108,7 +1108,7 @@
            transform="translate(35.796304,40.214454)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan4678">— other significant station</tspan></text>
+             id="tspan1852">— other significant station</tspan></text>
         <text
            xml:space="preserve"
            id="text55467-0-3"
@@ -1116,7 +1116,7 @@
            transform="translate(35.918701,61.753516)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan4680">— terminal station for some trains</tspan></text>
+             id="tspan1854">— terminal station for some trains</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
@@ -1213,12 +1213,6 @@
        id="path1239-3"
        cx="83.735649"
        cy="163.56024"
-       r="5.5423169" />
-    <circle
-       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
-       id="path1239-3-7-3"
-       cx="221.59256"
-       cy="312.60129"
        r="5.5423169" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
@@ -1601,22 +1595,6 @@
          y="451.30142"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';text-align:center;text-anchor:middle"
          id="tspan36682">Mitrovica</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:13.3333px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="197.0538"
-       y="339.26678"
-       id="text6331-0-2-2-1"><tspan
-         sodipodi:role="line"
-         x="197.0538"
-         y="339.26678"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:13.3333px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle"
-         id="tspan48833">Novi Sad</tspan><tspan
-         sodipodi:role="line"
-         x="196.4888"
-         y="350.37692"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:13.3333px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle"
-         id="tspan54453">Ranžirna</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
