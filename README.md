@@ -4,7 +4,7 @@ Full size and download: https://serbian-railways.netlify.app/map.png
 
 <img src="https://serbian-railways.netlify.app/map.png" width="200"/>
 
-Last update: 2024-02-29
+Last update: 2024-05-21
 
 Inspired by map of Serbian Railways made by Maximilian Dörrbecker
 
