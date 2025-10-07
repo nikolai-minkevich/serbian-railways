@@ -265,6 +265,7 @@
           <li>Click & drag: Move map</li>
           <li>Buttons: Precise zoom control</li>
           <li>Keyboard: +, -, 0 keys</li>
+          <li><strong>Mobile:</strong> Pinch to zoom, drag to pan, double-tap to reset</li>
         </ul>
       </div>
     </div>
@@ -287,6 +288,27 @@
     function hideLoading() {
       loading.style.display = 'none';
       // Recalculate boundaries after image loads
+      updateTransform();
+    }
+    
+    function ensureMapVisible() {
+      // Force the map to be visible by resetting position if needed
+      const containerWidth = mapContainer.clientWidth;
+      const containerHeight = mapContainer.clientHeight;
+      const imageWidth = mapImage.naturalWidth || mapImage.clientWidth;
+      const imageHeight = mapImage.naturalHeight || mapImage.clientHeight;
+      
+      const scaledWidth = imageWidth * currentZoom;
+      const scaledHeight = imageHeight * currentZoom;
+      
+      // If the scaled image is smaller than container, center it
+      if (scaledWidth <= containerWidth) {
+        currentX = 0;
+      }
+      if (scaledHeight <= containerHeight) {
+        currentY = 0;
+      }
+      
       updateTransform();
     }
     
@@ -327,7 +349,22 @@
         currentY = Math.max(-maxY, Math.min(maxY, currentY));
       }
       
+      // Apply transform with proper origin
+      mapImage.style.transformOrigin = 'center center';
       mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
+      
+      // Debug logging for mobile
+      console.log('Transform applied:', {
+        zoom: currentZoom,
+        x: currentX,
+        y: currentY,
+        maxX: maxX,
+        maxY: maxY,
+        scaledWidth: scaledWidth,
+        scaledHeight: scaledHeight,
+        containerWidth: containerWidth,
+        containerHeight: containerHeight
+      });
     }
     
     function zoomIn() {
@@ -345,6 +382,7 @@
       currentX = 0;
       currentY = 0;
       updateTransform();
+      ensureMapVisible();
     }
     
     // Mouse events for desktop
@@ -380,6 +418,8 @@
     let lastTouchX = 0;
     let lastTouchY = 0;
     let isPinching = false;
+    let lastTapTime = 0;
+    let tapCount = 0;
     
     // Prevent default touch behaviors on the container
     mapContainer.addEventListener('touchstart', function(e) {
@@ -393,13 +433,28 @@
     mapImage.addEventListener('touchstart', function(e) {
       e.preventDefault();
       if (e.touches.length === 1) {
-        // Single touch - panning
+        // Single touch - panning or tap
         isDragging = true;
         startX = e.touches[0].clientX;
         startY = e.touches[0].clientY;
         startTransformX = currentX;
         startTransformY = currentY;
         isPinching = false;
+        
+        // Handle double tap for reset
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTapTime;
+        if (tapLength < 500 && tapLength > 0) {
+          tapCount++;
+        } else {
+          tapCount = 1;
+        }
+        lastTapTime = currentTime;
+        
+        if (tapCount === 2) {
+          resetZoom();
+          tapCount = 0;
+        }
       } else if (e.touches.length === 2) {
         // Two touches - pinch to zoom
         isPinching = true;
@@ -431,12 +486,21 @@
         const scale = currentDistance / lastTouchDistance;
         const newZoom = Math.max(0.5, Math.min(3, currentZoom * scale));
         
-        // Calculate zoom center
-        const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-        const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        // Calculate zoom center relative to the container
+        const containerRect = mapContainer.getBoundingClientRect();
+        const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2 - containerRect.left;
+        const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2 - containerRect.top;
         
-        // Adjust position to zoom towards the center
+        // Calculate the zoom factor
         const zoomFactor = newZoom / currentZoom;
+        
+        // Adjust position to zoom towards the touch center
+        // Convert touch center to image coordinates
+        const imageRect = mapImage.getBoundingClientRect();
+        const imageCenterX = centerX - (imageRect.left - containerRect.left);
+        const imageCenterY = centerY - (imageRect.top - containerRect.top);
+        
+        // Calculate new position to keep the touch point under the finger
         currentX = centerX - (centerX - currentX) * zoomFactor;
         currentY = centerY - (centerY - currentY) * zoomFactor;
         
@@ -449,6 +513,9 @@
       e.preventDefault();
       isDragging = false;
       isPinching = false;
+      
+      // Ensure map is still visible after touch interaction
+      setTimeout(ensureMapVisible, 100);
     }, { passive: false });
     
     // Mouse wheel zoom
