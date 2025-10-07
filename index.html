@@ -291,8 +291,8 @@
       updateTransform();
     }
     
-    function ensureMapVisible() {
-      // Force the map to be visible by resetting position if needed
+    function forceMapInBounds() {
+      // Force the map to stay within bounds - no white space allowed
       const containerWidth = mapContainer.clientWidth;
       const containerHeight = mapContainer.clientHeight;
       const imageWidth = mapImage.naturalWidth || mapImage.clientWidth;
@@ -301,15 +301,25 @@
       const scaledWidth = imageWidth * currentZoom;
       const scaledHeight = imageHeight * currentZoom;
       
-      // If the scaled image is smaller than container, center it
+      // Calculate maximum allowed positions
+      const maxX = Math.max(0, (scaledWidth - containerWidth) / 2);
+      const maxY = Math.max(0, (scaledHeight - containerHeight) / 2);
+      
+      // Force position to stay within bounds
       if (scaledWidth <= containerWidth) {
         currentX = 0;
-      }
-      if (scaledHeight <= containerHeight) {
-        currentY = 0;
+      } else {
+        currentX = Math.max(-maxX, Math.min(maxX, currentX));
       }
       
-      updateTransform();
+      if (scaledHeight <= containerHeight) {
+        currentY = 0;
+      } else {
+        currentY = Math.max(-maxY, Math.min(maxY, currentY));
+      }
+      
+      // Apply the corrected position
+      mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
     }
     
     function showError() {
@@ -330,41 +340,41 @@
       const scaledWidth = imageWidth * currentZoom;
       const scaledHeight = imageHeight * currentZoom;
       
-      // Calculate maximum allowed translation
-      // The image should never be translated beyond the point where it would show empty space
-      const maxX = Math.max(0, (scaledWidth - containerWidth) / 2);
-      const maxY = Math.max(0, (scaledHeight - containerHeight) / 2);
+      // Calculate the maximum allowed translation to prevent white space
+      // The image should fill the container completely when zoomed
+      let maxX = 0;
+      let maxY = 0;
       
-      // Constrain the translation within boundaries
-      // If the scaled image is smaller than the container, center it (no translation allowed)
+      if (scaledWidth > containerWidth) {
+        // Image is wider than container - allow horizontal panning
+        maxX = (scaledWidth - containerWidth) / 2;
+      }
+      
+      if (scaledHeight > containerHeight) {
+        // Image is taller than container - allow vertical panning
+        maxY = (scaledHeight - containerHeight) / 2;
+      }
+      
+      // STRICT boundary enforcement - never allow white space
       if (scaledWidth <= containerWidth) {
+        // Image fits horizontally - center it
         currentX = 0;
       } else {
+        // Constrain horizontal movement to prevent white space
         currentX = Math.max(-maxX, Math.min(maxX, currentX));
       }
       
       if (scaledHeight <= containerHeight) {
+        // Image fits vertically - center it
         currentY = 0;
       } else {
+        // Constrain vertical movement to prevent white space
         currentY = Math.max(-maxY, Math.min(maxY, currentY));
       }
       
-      // Apply transform with proper origin
+      // Apply transform
       mapImage.style.transformOrigin = 'center center';
       mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
-      
-      // Debug logging for mobile
-      console.log('Transform applied:', {
-        zoom: currentZoom,
-        x: currentX,
-        y: currentY,
-        maxX: maxX,
-        maxY: maxY,
-        scaledWidth: scaledWidth,
-        scaledHeight: scaledHeight,
-        containerWidth: containerWidth,
-        containerHeight: containerHeight
-      });
     }
     
     function zoomIn() {
@@ -382,7 +392,6 @@
       currentX = 0;
       currentY = 0;
       updateTransform();
-      ensureMapVisible();
     }
     
     // Mouse events for desktop
@@ -471,12 +480,41 @@
     mapImage.addEventListener('touchmove', function(e) {
       e.preventDefault();
       if (isDragging && e.touches.length === 1) {
-        // Panning
+        // Panning - calculate movement
         const deltaX = e.touches[0].clientX - startX;
         const deltaY = e.touches[0].clientY - startY;
+        
+        // Apply movement
         currentX = startTransformX + deltaX;
         currentY = startTransformY + deltaY;
-        updateTransform();
+        
+        // IMMEDIATELY enforce boundaries to prevent white space
+        const containerWidth = mapContainer.clientWidth;
+        const containerHeight = mapContainer.clientHeight;
+        const imageWidth = mapImage.naturalWidth || mapImage.clientWidth;
+        const imageHeight = mapImage.naturalHeight || mapImage.clientHeight;
+        const scaledWidth = imageWidth * currentZoom;
+        const scaledHeight = imageHeight * currentZoom;
+        
+        // Calculate maximum allowed positions
+        const maxX = scaledWidth > containerWidth ? (scaledWidth - containerWidth) / 2 : 0;
+        const maxY = scaledHeight > containerHeight ? (scaledHeight - containerHeight) / 2 : 0;
+        
+        // Constrain position to prevent white space
+        if (scaledWidth <= containerWidth) {
+          currentX = 0;
+        } else {
+          currentX = Math.max(-maxX, Math.min(maxX, currentX));
+        }
+        
+        if (scaledHeight <= containerHeight) {
+          currentY = 0;
+        } else {
+          currentY = Math.max(-maxY, Math.min(maxY, currentY));
+        }
+        
+        // Apply the constrained transform
+        mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
       } else if (isPinching && e.touches.length === 2) {
         // Pinch to zoom
         const currentDistance = Math.hypot(
@@ -514,8 +552,8 @@
       isDragging = false;
       isPinching = false;
       
-      // Ensure map is still visible after touch interaction
-      setTimeout(ensureMapVisible, 100);
+      // Force map to stay within bounds after touch interaction
+      forceMapInBounds();
     }, { passive: false });
     
     // Mouse wheel zoom
