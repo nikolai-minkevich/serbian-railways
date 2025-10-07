@@ -143,6 +143,13 @@
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       z-index: 10;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    .controls.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
     }
     
     .zoom-controls {
@@ -289,6 +296,7 @@
     const mapImage = document.getElementById('mapImage');
     const mapContainer = document.querySelector('.map-container');
     const loading = document.getElementById('loading');
+    const controls = document.querySelector('.controls');
     
     function hideLoading() {
       loading.style.display = 'none';
@@ -354,6 +362,13 @@
     function updateTransform() {
       constrainTranslation();
       mapImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      
+      // Hide controls when zoomed in
+      if (scale > 1) {
+        controls.classList.add('hidden');
+      } else {
+        controls.classList.remove('hidden');
+      }
     }
     
     function zoomIn() {
