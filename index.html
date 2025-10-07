@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive map of Serbian Railways network showing all train routes, stations, and connections across Serbia.">
+  <meta name="keywords" content="Serbian Railways, train map, Serbia, railway network, train routes, stations, public transport">
+  <meta name="author" content="Serbian Railways">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Serbian Railways Map - Complete Network Overview">
+  <meta property="og:description" content="Explore the complete Serbian Railways network with our interactive map showing all train routes and stations.">
+  <meta property="og:image" content="/map.png">
+  <meta property="og:url" content="">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Serbian Railways Map - Complete Network Overview">
+  <meta property="twitter:description" content="Explore the complete Serbian Railways network with our interactive map showing all train routes and stations.">
+  <meta property="twitter:image" content="/map.png">
+  
+  <title>Serbian Railways Map - Complete Network Overview</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 120px);
+      background: white;
+      overflow: hidden;
+    }
+    
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    .map-image:hover {
+      transform: scale(1.02);
+    }
+    
+    .controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+    
+    .zoom-controls {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .btn {
+      background: #1e3c72;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: #2a5298;
+    }
+    
+    .info-panel {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+    
+    .info-panel h3 {
+      color: #1e3c72;
+      margin-bottom: 0.5rem;
+    }
+    
+    .info-panel p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      
+      .header p {
+        font-size: 1rem;
+      }
+      
+      .controls {
+        position: static;
+        margin: 1rem;
+        width: calc(100% - 2rem);
+      }
+      
+      .map-container {
+        height: calc(100vh - 200px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Serbian Railways "Metro-like" Network Map</h1>
+  </header>
+  
+  <div class="map-container">
+    <div class="loading" id="loading">Loading map...</div>
+    <img 
+      src="/map.png" 
+      alt="Interactive map of Serbian Railways network showing all train routes, stations, and connections across Serbia"
+      class="map-image"
+      id="mapImage"
+      onload="hideLoading()"
+      onerror="showError()"
+    >
+    
+    <div class="controls">
+      <div class="zoom-controls">
+        <button class="btn" onclick="zoomIn()">Zoom In</button>
+        <button class="btn" onclick="zoomOut()">Zoom Out</button>
+        <button class="btn" onclick="resetZoom()">Reset</button>
+      </div>
+      <div class="info-panel">
+        <h3>Map Information</h3>
+        <p>This map shows the complete Serbian Railways network including all major routes, stations, and connections.</p>
+        <p><strong>Use the zoom controls</strong> to explore different areas in detail.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    let currentZoom = 1;
+    const mapImage = document.getElementById('mapImage');
+    const loading = document.getElementById('loading');
+    
+    function hideLoading() {
+      loading.style.display = 'none';
+    }
+    
+    function showError() {
+      loading.innerHTML = 'Error loading map. Please refresh the page.';
+      loading.style.color = '#e74c3c';
+    }
+    
+    function zoomIn() {
+      currentZoom = Math.min(currentZoom * 1.2, 3);
+      mapImage.style.transform = `scale(${currentZoom})`;
+    }
+    
+    function zoomOut() {
+      currentZoom = Math.max(currentZoom / 1.2, 0.5);
+      mapImage.style.transform = `scale(${currentZoom})`;
+    }
+    
+    function resetZoom() {
+      currentZoom = 1;
+      mapImage.style.transform = 'scale(1)';
+    }
+    
+    // Add keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        zoomIn();
+      } else if (e.key === '-') {
+        e.preventDefault();
+        zoomOut();
+      } else if (e.key === '0') {
+        e.preventDefault();
+        resetZoom();
+      }
+    });
+    
+    // Add touch gestures for mobile
+    let startDistance = 0;
+    let startZoom = 1;
+    
+    mapImage.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 2) {
+        startDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        startZoom = currentZoom;
+      }
+    });
+    
+    mapImage.addEventListener('touchmove', function(e) {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        const currentDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        const scale = currentDistance / startDistance;
+        currentZoom = Math.max(0.5, Math.min(3, startZoom * scale));
+        mapImage.style.transform = `scale(${currentZoom})`;
+      }
+    });
+  </script>
+</body>
+</html>
