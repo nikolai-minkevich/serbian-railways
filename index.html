@@ -378,6 +378,18 @@
         const deltaY = e.touches[0].clientY - startY;
         currentX = startTransformX + deltaX;
         currentY = startTransformY + deltaY;
+        
+        // Apply boundary constraints before updating transform
+        const containerRect = mapContainer.getBoundingClientRect();
+        const imageRect = mapImage.getBoundingClientRect();
+        const scaledWidth = imageRect.width * currentZoom;
+        const scaledHeight = imageRect.height * currentZoom;
+        const maxX = Math.max(0, (scaledWidth - containerRect.width) / 2);
+        const maxY = Math.max(0, (scaledHeight - containerRect.height) / 2);
+        
+        currentX = Math.max(-maxX, Math.min(maxX, currentX));
+        currentY = Math.max(-maxY, Math.min(maxY, currentY));
+        
         updateTransform();
         e.preventDefault();
       } else if (isPinching && e.touches.length === 2) {
