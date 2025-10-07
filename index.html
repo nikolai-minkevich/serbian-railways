@@ -55,6 +55,14 @@
       opacity: 0.9;
     }
     
+    .disclaimer {
+      font-size: 0.9rem !important;
+      opacity: 0.8 !important;
+      margin: 0.5rem 0 !important;
+      font-style: italic;
+      color: #ffeb3b;
+    }
+    
     .header-links {
       margin-top: 1rem;
       display: flex;
@@ -189,6 +197,11 @@
         font-size: 1rem;
       }
       
+      .disclaimer {
+        font-size: 0.8rem !important;
+        margin: 0.3rem 0 !important;
+      }
+      
       .header-links {
         flex-direction: column;
         gap: 0.5rem;
@@ -217,7 +230,8 @@
 </head>
 <body>
   <header class="header">
-    <h1>Serbian Railways "Metro-like" Network Map</h1>
+    <h1>Serbian Railways — Metro-Style Network Map</h1>
+    <p class="disclaimer">⚠️ Unofficial fan project — not affiliated with Serbian Railways</p>
     <div class="header-links">
       <a href="/map.png" download="serbian-railways-map.png" class="download-btn">📥 Download Map</a>
       <a href="https://github.com/nikolai-minkevich/serbian-railways" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
@@ -271,6 +285,8 @@
     
     function hideLoading() {
       loading.style.display = 'none';
+      // Recalculate boundaries after image loads
+      updateTransform();
     }
     
     function showError() {
@@ -279,17 +295,22 @@
     }
     
     function updateTransform() {
-      // Calculate boundaries to prevent map from moving out of view
-      const containerRect = mapContainer.getBoundingClientRect();
-      const imageRect = mapImage.getBoundingClientRect();
+      // Get container dimensions
+      const containerWidth = mapContainer.clientWidth;
+      const containerHeight = mapContainer.clientHeight;
+      
+      // Get original image dimensions
+      const imageWidth = mapImage.naturalWidth || mapImage.clientWidth;
+      const imageHeight = mapImage.naturalHeight || mapImage.clientHeight;
       
       // Calculate the scaled dimensions
-      const scaledWidth = imageRect.width * currentZoom;
-      const scaledHeight = imageRect.height * currentZoom;
+      const scaledWidth = imageWidth * currentZoom;
+      const scaledHeight = imageHeight * currentZoom;
       
       // Calculate maximum allowed translation
-      const maxX = Math.max(0, (scaledWidth - containerRect.width) / 2);
-      const maxY = Math.max(0, (scaledHeight - containerRect.height) / 2);
+      // Only allow translation if the scaled image is larger than the container
+      const maxX = scaledWidth > containerWidth ? (scaledWidth - containerWidth) / 2 : 0;
+      const maxY = scaledHeight > containerHeight ? (scaledHeight - containerHeight) / 2 : 0;
       
       // Constrain the translation within boundaries
       currentX = Math.max(-maxX, Math.min(maxX, currentX));
@@ -378,18 +399,6 @@
         const deltaY = e.touches[0].clientY - startY;
         currentX = startTransformX + deltaX;
         currentY = startTransformY + deltaY;
-        
-        // Apply boundary constraints before updating transform
-        const containerRect = mapContainer.getBoundingClientRect();
-        const imageRect = mapImage.getBoundingClientRect();
-        const scaledWidth = imageRect.width * currentZoom;
-        const scaledHeight = imageRect.height * currentZoom;
-        const maxX = Math.max(0, (scaledWidth - containerRect.width) / 2);
-        const maxY = Math.max(0, (scaledHeight - containerRect.height) / 2);
-        
-        currentX = Math.max(-maxX, Math.min(maxX, currentX));
-        currentY = Math.max(-maxY, Math.min(maxY, currentY));
-        
         updateTransform();
         e.preventDefault();
       } else if (isPinching && e.touches.length === 2) {
@@ -451,6 +460,11 @@
         e.preventDefault();
         resetZoom();
       }
+    });
+    
+    // Recalculate boundaries on window resize
+    window.addEventListener('resize', function() {
+      updateTransform();
     });
     
   </script>
