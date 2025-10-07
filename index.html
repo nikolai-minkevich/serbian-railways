@@ -108,6 +108,7 @@
       background: white;
       overflow: hidden;
       cursor: grab;
+      touch-action: none;
     }
     
     .map-container:active {
@@ -308,13 +309,23 @@
       const scaledHeight = imageHeight * currentZoom;
       
       // Calculate maximum allowed translation
-      // Only allow translation if the scaled image is larger than the container
-      const maxX = scaledWidth > containerWidth ? (scaledWidth - containerWidth) / 2 : 0;
-      const maxY = scaledHeight > containerHeight ? (scaledHeight - containerHeight) / 2 : 0;
+      // The image should never be translated beyond the point where it would show empty space
+      const maxX = Math.max(0, (scaledWidth - containerWidth) / 2);
+      const maxY = Math.max(0, (scaledHeight - containerHeight) / 2);
       
       // Constrain the translation within boundaries
-      currentX = Math.max(-maxX, Math.min(maxX, currentX));
-      currentY = Math.max(-maxY, Math.min(maxY, currentY));
+      // If the scaled image is smaller than the container, center it (no translation allowed)
+      if (scaledWidth <= containerWidth) {
+        currentX = 0;
+      } else {
+        currentX = Math.max(-maxX, Math.min(maxX, currentX));
+      }
+      
+      if (scaledHeight <= containerHeight) {
+        currentY = 0;
+      } else {
+        currentY = Math.max(-maxY, Math.min(maxY, currentY));
+      }
       
       mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
     }
@@ -370,7 +381,17 @@
     let lastTouchY = 0;
     let isPinching = false;
     
+    // Prevent default touch behaviors on the container
+    mapContainer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+    
+    mapContainer.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+    
     mapImage.addEventListener('touchstart', function(e) {
+      e.preventDefault();
       if (e.touches.length === 1) {
         // Single touch - panning
         isDragging = true;
@@ -390,9 +411,10 @@
         lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
         lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
       }
-    });
+    }, { passive: false });
     
     mapImage.addEventListener('touchmove', function(e) {
+      e.preventDefault();
       if (isDragging && e.touches.length === 1) {
         // Panning
         const deltaX = e.touches[0].clientX - startX;
@@ -400,7 +422,6 @@
         currentX = startTransformX + deltaX;
         currentY = startTransformY + deltaY;
         updateTransform();
-        e.preventDefault();
       } else if (isPinching && e.touches.length === 2) {
         // Pinch to zoom
         const currentDistance = Math.hypot(
@@ -421,14 +442,14 @@
         
         currentZoom = newZoom;
         updateTransform();
-        e.preventDefault();
       }
-    });
+    }, { passive: false });
     
     mapImage.addEventListener('touchend', function(e) {
+      e.preventDefault();
       isDragging = false;
       isPinching = false;
-    });
+    }, { passive: false });
     
     // Mouse wheel zoom
     mapContainer.addEventListener('wheel', function(e) {
