@@ -4,7 +4,7 @@ Full size and download: https://serbian-railways.netlify.app/map.png
 
 <img src="https://serbian-railways.netlify.app/map.png" width="200"/>
 
-Last update: 2024-12-15
+Last update: 2025-10-07
 
 Official SrbijaVoz timetable: https://w3.srbvoz.rs/redvoznje
 
