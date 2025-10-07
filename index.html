@@ -211,13 +211,21 @@
         font-size: 1.5rem;
       }
       
+      .title-line2 {
+        display: block;
+      }
+      
       .header p {
         font-size: 1rem;
       }
       
       .disclaimer {
-        font-size: 0.8rem !important;
+        font-size: 0.75rem !important;
         margin: 0.3rem 0 !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 0.5rem;
       }
       
       .download-btn {
@@ -241,7 +249,7 @@
 </head>
 <body>
   <header class="header">
-    <h1>Serbian Railways — Metro-Style Network Map</h1>
+    <h1><span class="title-line1">Serbian Railways</span> <span class="title-line2">— Metro-Style Network Map</span></h1>
     <p class="disclaimer">⚠️ Unofficial project — not affiliated with SrbijaVoz</p>
     <div class="header-links">
       <a href="/map.png" target="_blank" rel="noopener noreferrer" class="download-btn">📥 Download map as image</a>
