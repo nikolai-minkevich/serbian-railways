@@ -134,38 +134,6 @@
       }
     }
     
-    .controls {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      z-index: 10;
-    }
-    
-    .zoom-controls {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .btn {
-      background: #1e3c72;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: background-color 0.3s ease;
-    }
-    
-    .btn:hover {
-      background: #2a5298;
-    }
-    
     .info-panel {
       background: rgba(255, 255, 255, 0.95);
       padding: 1rem;
@@ -222,12 +190,6 @@
         font-size: 0.8rem;
       }
       
-      .controls {
-        position: static;
-        margin: 1rem;
-        width: calc(100% - 2rem);
-      }
-      
       .map-container {
         height: calc(100vh - 200px);
       }
@@ -254,26 +216,6 @@
       onload="hideLoading()"
       onerror="showError()"
     >
-    
-    <div class="controls">
-      <div class="zoom-controls">
-        <button class="btn" onclick="zoomIn()">Zoom In</button>
-        <button class="btn" onclick="zoomOut()">Zoom Out</button>
-        <button class="btn" onclick="resetZoom()">Reset</button>
-      </div>
-      <div class="info-panel">
-        <h3>Map Information</h3>
-        <p>This map shows the complete Serbian Railways network including all major routes, stations, and connections.</p>
-        <p><strong>Controls:</strong></p>
-        <ul style="margin: 0.5rem 0; padding-left: 1.2rem; font-size: 0.85rem;">
-          <li>Mouse wheel: Zoom in/out</li>
-          <li>Click & drag: Move map</li>
-          <li>Buttons: Precise zoom control</li>
-          <li>Keyboard: +, -, 0 keys</li>
-          <li><strong>Mobile:</strong> Pinch to zoom, drag to pan, double-tap to reset</li>
-        </ul>
-      </div>
-    </div>
   </div>
   
   <script>
@@ -404,7 +346,6 @@
     // Touch events for mobile
     let lastTouchDistance = 0;
     let isPinching = false;
-    let lastTapTime = 0;
     
     mapContainer.addEventListener('touchstart', function(e) {
       e.preventDefault();
@@ -417,13 +358,6 @@
         startY = e.touches[0].clientY;
         initialTranslateX = translateX;
         initialTranslateY = translateY;
-        
-        // Double tap to reset
-        const now = Date.now();
-        if (now - lastTapTime < 300) {
-          resetZoom();
-        }
-        lastTapTime = now;
       } else if (e.touches.length === 2) {
         // Pinch zoom
         isDragging = false;
