@@ -55,12 +55,55 @@
       opacity: 0.9;
     }
     
+    .header-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .download-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .download-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .github-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    
+    .github-link:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
     .map-container {
       position: relative;
       width: 100%;
       height: calc(100vh - 120px);
       background: white;
       overflow: hidden;
+      cursor: grab;
+    }
+    
+    .map-container:active {
+      cursor: grabbing;
     }
     
     .map-image {
@@ -68,7 +111,9 @@
       height: 100%;
       object-fit: contain;
       display: block;
-      transition: transform 0.3s ease;
+      transition: transform 0.1s ease-out;
+      user-select: none;
+      -webkit-user-drag: none;
     }
     
     .map-image:hover {
@@ -144,6 +189,20 @@
         font-size: 1rem;
       }
       
+      .header-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .download-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+      
+      .github-link {
+        font-size: 0.8rem;
+      }
+      
       .controls {
         position: static;
         margin: 1rem;
@@ -159,6 +218,10 @@
 <body>
   <header class="header">
     <h1>Serbian Railways "Metro-like" Network Map</h1>
+    <div class="header-links">
+      <a href="/map.png" download="serbian-railways-map.png" class="download-btn">📥 Download Map</a>
+      <a href="https://github.com/nikolai-minkevich/serbian-railways" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+    </div>
   </header>
   
   <div class="map-container">
@@ -188,7 +251,16 @@
   
   <script>
     let currentZoom = 1;
+    let currentX = 0;
+    let currentY = 0;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let startTransformX = 0;
+    let startTransformY = 0;
+    
     const mapImage = document.getElementById('mapImage');
+    const mapContainer = document.querySelector('.map-container');
     const loading = document.getElementById('loading');
     
     function hideLoading() {
@@ -200,20 +272,120 @@
       loading.style.color = '#e74c3c';
     }
     
+    function updateTransform() {
+      mapImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${currentZoom})`;
+    }
+    
     function zoomIn() {
       currentZoom = Math.min(currentZoom * 1.2, 3);
-      mapImage.style.transform = `scale(${currentZoom})`;
+      updateTransform();
     }
     
     function zoomOut() {
       currentZoom = Math.max(currentZoom / 1.2, 0.5);
-      mapImage.style.transform = `scale(${currentZoom})`;
+      updateTransform();
     }
     
     function resetZoom() {
       currentZoom = 1;
-      mapImage.style.transform = 'scale(1)';
+      currentX = 0;
+      currentY = 0;
+      updateTransform();
     }
+    
+    // Mouse events for desktop
+    mapContainer.addEventListener('mousedown', function(e) {
+      if (e.target === mapImage) {
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        startTransformX = currentX;
+        startTransformY = currentY;
+        mapContainer.style.cursor = 'grabbing';
+        e.preventDefault();
+      }
+    });
+    
+    document.addEventListener('mousemove', function(e) {
+      if (isDragging) {
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+        currentX = startTransformX + deltaX;
+        currentY = startTransformY + deltaY;
+        updateTransform();
+      }
+    });
+    
+    document.addEventListener('mouseup', function() {
+      isDragging = false;
+      mapContainer.style.cursor = 'grab';
+    });
+    
+    // Touch events for mobile
+    let lastTouchDistance = 0;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+    let isPinching = false;
+    
+    mapImage.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 1) {
+        // Single touch - panning
+        isDragging = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        startTransformX = currentX;
+        startTransformY = currentY;
+        isPinching = false;
+      } else if (e.touches.length === 2) {
+        // Two touches - pinch to zoom
+        isPinching = true;
+        isDragging = false;
+        lastTouchDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      }
+    });
+    
+    mapImage.addEventListener('touchmove', function(e) {
+      if (isDragging && e.touches.length === 1) {
+        // Panning
+        const deltaX = e.touches[0].clientX - startX;
+        const deltaY = e.touches[0].clientY - startY;
+        currentX = startTransformX + deltaX;
+        currentY = startTransformY + deltaY;
+        updateTransform();
+        e.preventDefault();
+      } else if (isPinching && e.touches.length === 2) {
+        // Pinch to zoom
+        const currentDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        const scale = currentDistance / lastTouchDistance;
+        const newZoom = Math.max(0.5, Math.min(3, currentZoom * scale));
+        
+        // Calculate zoom center
+        const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        
+        // Adjust position to zoom towards the center
+        const zoomFactor = newZoom / currentZoom;
+        currentX = centerX - (centerX - currentX) * zoomFactor;
+        currentY = centerY - (centerY - currentY) * zoomFactor;
+        
+        currentZoom = newZoom;
+        updateTransform();
+        e.preventDefault();
+      }
+    });
+    
+    mapImage.addEventListener('touchend', function(e) {
+      isDragging = false;
+      isPinching = false;
+    });
     
     // Add keyboard shortcuts
     document.addEventListener('keydown', function(e) {
@@ -229,32 +401,6 @@
       }
     });
     
-    // Add touch gestures for mobile
-    let startDistance = 0;
-    let startZoom = 1;
-    
-    mapImage.addEventListener('touchstart', function(e) {
-      if (e.touches.length === 2) {
-        startDistance = Math.hypot(
-          e.touches[0].clientX - e.touches[1].clientX,
-          e.touches[0].clientY - e.touches[1].clientY
-        );
-        startZoom = currentZoom;
-      }
-    });
-    
-    mapImage.addEventListener('touchmove', function(e) {
-      if (e.touches.length === 2) {
-        e.preventDefault();
-        const currentDistance = Math.hypot(
-          e.touches[0].clientX - e.touches[1].clientX,
-          e.touches[0].clientY - e.touches[1].clientY
-        );
-        const scale = currentDistance / startDistance;
-        currentZoom = Math.max(0.5, Math.min(3, startZoom * scale));
-        mapImage.style.transform = `scale(${currentZoom})`;
-      }
-    });
   </script>
 </body>
 </html>
