@@ -121,11 +121,17 @@
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
       user-select: none;
       -webkit-user-drag: none;
       pointer-events: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .map-image {
+        object-fit: cover;
+      }
     }
     
     .controls {
@@ -298,19 +304,51 @@
       const containerWidth = containerRect.width;
       const containerHeight = containerRect.height;
       
-      // Calculate the scaled size of the image
-      const scaledWidth = containerWidth * scale;
-      const scaledHeight = containerHeight * scale;
+      // Check if we're on mobile (width <= 768px)
+      const isMobile = window.innerWidth <= 768;
       
-      // Calculate maximum translation to prevent white space
-      // When zoomed in (scale > 1), we can pan
-      // When zoomed out (scale <= 1), no panning allowed
-      const maxTranslateX = Math.max(0, (scaledWidth - containerWidth) / 2);
-      const maxTranslateY = Math.max(0, (scaledHeight - containerHeight) / 2);
-      
-      // Constrain translation to prevent showing white space
-      translateX = Math.max(-maxTranslateX, Math.min(maxTranslateX, translateX));
-      translateY = Math.max(-maxTranslateY, Math.min(maxTranslateY, translateY));
+      if (isMobile) {
+        // Mobile: object-fit is cover, so scale the container size
+        const scaledWidth = containerWidth * scale;
+        const scaledHeight = containerHeight * scale;
+        
+        const maxTranslateX = Math.max(0, (scaledWidth - containerWidth) / 2);
+        const maxTranslateY = Math.max(0, (scaledHeight - containerHeight) / 2);
+        
+        translateX = Math.max(-maxTranslateX, Math.min(maxTranslateX, translateX));
+        translateY = Math.max(-maxTranslateY, Math.min(maxTranslateY, translateY));
+      } else {
+        // Desktop: object-fit is contain, need to calculate actual image dimensions
+        const imageWidth = mapImage.naturalWidth || mapImage.clientWidth;
+        const imageHeight = mapImage.naturalHeight || mapImage.clientHeight;
+        
+        // Calculate how the image fits in the container with object-fit: contain
+        const containerRatio = containerWidth / containerHeight;
+        const imageRatio = imageWidth / imageHeight;
+        
+        let displayWidth, displayHeight;
+        if (imageRatio > containerRatio) {
+          // Image is wider - fits to width
+          displayWidth = containerWidth;
+          displayHeight = containerWidth / imageRatio;
+        } else {
+          // Image is taller - fits to height
+          displayHeight = containerHeight;
+          displayWidth = containerHeight * imageRatio;
+        }
+        
+        // Calculate scaled dimensions
+        const scaledWidth = displayWidth * scale;
+        const scaledHeight = displayHeight * scale;
+        
+        // Calculate maximum translation
+        const maxTranslateX = Math.max(0, (scaledWidth - containerWidth) / 2);
+        const maxTranslateY = Math.max(0, (scaledHeight - containerHeight) / 2);
+        
+        // Constrain translation
+        translateX = Math.max(-maxTranslateX, Math.min(maxTranslateX, translateX));
+        translateY = Math.max(-maxTranslateY, Math.min(maxTranslateY, translateY));
+      }
     }
     
     function updateTransform() {
@@ -436,10 +474,10 @@
       
       if (delta < 0) {
         // Zoom in
-        currentZoom = Math.min(currentZoom * (1 + zoomFactor), 3);
+        scale = Math.min(scale * (1 + zoomFactor), 3);
       } else {
         // Zoom out
-        currentZoom = Math.max(currentZoom * (1 - zoomFactor), 0.5);
+        scale = Math.max(scale * (1 - zoomFactor), 1);
       }
       
       updateTransform();
