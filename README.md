@@ -1,6 +1,6 @@
 # Serbian Railways — Metro-Style Network Map
 
-A schematic map of the Serbian Railways network, designed in the style of a metro map. Each route is shown as a separate colored line. Not all stations are included — only terminal, interchange, and a few major intermediate ones.
+A schematic map of the Serbian Railways network, designed in the style of a metro map. Each suburban route operated by Srbija Voz is shown as a separate colored line. Only terminal, interchange, and a few major intermediate stations are included.
 
 Full size and download: https://serbian-railways.netlify.app/map.png
 
