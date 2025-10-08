@@ -12,7 +12,8 @@ Site: https://serbian-railways.netlify.app/
   <img src="https://serbian-railways.netlify.app/map.png" width="200"/>
 </a>
 
-<a href="https://serbian-railways.netlify.app/map.png" download>
+
+<a href="https://serbian-railways.netlify.app/map.png">
   <img src="https://img.shields.io/badge/📥_Download-Map_Image-blue?style=for-the-badge" alt="Download Map Image">
 </a>
 
