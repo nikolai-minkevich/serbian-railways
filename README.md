@@ -7,11 +7,7 @@ A schematic map of the Serbian Railways network, designed in the style of a metr
 
 Site: https://serbian-railways.netlify.app/
 
-
-<a href="https://serbian-railways.netlify.app/map.png" target="_blank">
-  <img src="https://serbian-railways.netlify.app/map.png" width="200"/>
-</a>
-
+<img src="https://serbian-railways.netlify.app/map.png" width="200"/>
 
 <a href="https://serbian-railways.netlify.app/map.png">
   <img src="https://img.shields.io/badge/📥_Download-Map_Image-blue?style=for-the-badge" alt="Download Map Image">
