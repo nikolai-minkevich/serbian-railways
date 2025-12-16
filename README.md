@@ -17,7 +17,7 @@ Site: https://serbian-railways.netlify.app/
   <img src="https://img.shields.io/badge/📥_Download-Map_Image-blue?style=for-the-badge" alt="Download Map Image">
 </a>
 
-Last map update: 2025-10-07
+Last map update: 2025-12-16
 
 Inspired by map of Serbian Railways made by Maximilian Dörrbecker
 
