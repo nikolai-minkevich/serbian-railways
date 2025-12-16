@@ -1012,9 +1012,9 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:snap-midpoints="false"
-     inkscape:zoom="1.1637507"
-     inkscape:cx="671.5356"
-     inkscape:cy="338.99014"
+     inkscape:zoom="3.291584"
+     inkscape:cx="762.0951"
+     inkscape:cy="399.95942"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="0"
@@ -1182,11 +1182,11 @@
        sodipodi:nodetypes="ccccccccccccccccccccc" />
     <path
        style="fill:none;stroke:#00ccff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 548.15126,374.64252 c -4.52838,2.3449 -9.05704,4.68994 -14.39745,7.04375 -5.3404,2.35381 -11.49239,4.71625 -16.88,5.21431 -5.38761,0.49805 -10.01115,-0.8689 -14.55614,-1.10152 -4.54498,-0.23263 -9.01071,0.66962 -13.45008,-0.0172 -4.43937,-0.68683 -8.85253,-2.96349 -13.27273,-1.43468 -4.4202,1.52881 -8.84587,6.86358 -12.9762,10.30013 -4.13032,3.43655 -7.96565,4.97494 -10.12871,6.78467 -2.16307,1.80973 -2.65304,3.88978 -4.24092,5.31679 -1.58787,1.427 -4.27441,2.20177 -6.56767,3.66583 -2.29326,1.46406 -4.19239,3.61709 -8.98798,8.3883 -4.79558,4.77121 -12.48747,12.16045 -19.0059,15.57029 -6.51844,3.40984 -11.86386,2.83988 -16.30898,4.01037 -4.44513,1.17049 -7.98858,4.08161 -10.70735,6.92575 -2.71877,2.84415 -4.61235,5.62073 -7.12165,7.95582 -2.5093,2.33509 -5.63441,4.22876 -6.05189,3.05583 -0.41747,-1.17292 1.87282,-5.41206 0.84371,-9.28019 -1.02912,-3.86813 -5.37716,-7.36182 -9.15671,-10.5883 -3.77955,-3.22649 -6.98686,-6.18278 -10.19448,-9.13937"
+       d="m 548.15126,374.64252 c -4.52838,2.3449 -9.05704,4.68994 -14.39745,7.04375 -5.3404,2.35381 -11.49239,4.71625 -16.88,5.21431 -5.38761,0.49805 -10.01115,-0.8689 -14.55614,-1.10152 -4.54498,-0.23263 -9.01071,0.66962 -13.45008,-0.0172 -4.43937,-0.68683 -8.85253,-2.96349 -13.27273,-1.43468 -4.4202,1.52881 -8.84587,6.86358 -12.9762,10.30013 -4.13032,3.43655 -7.96565,4.97494 -10.12871,6.78467 -2.16307,1.80973 -2.65304,3.88978 -4.24092,5.31679 -1.58787,1.427 -4.27441,2.20177 -6.56767,3.66583 -2.29326,1.46406 -4.19239,3.61709 -8.98798,8.3883 -4.79558,4.77121 -12.48747,12.16045 -19.0059,15.57029 -6.51844,3.40984 -11.86386,2.83988 -16.20001,4.08596 -4.33616,1.24608 -7.66161,4.30834 -10.24717,6.92372 -2.58557,2.61539 -4.43088,4.78351 -6.72551,8.31358 -2.29462,3.53006 -5.03811,8.42131 -5.41272,7.51517 -0.3746,-0.90614 1.61975,-7.60985 -0.92444,-13.85621 -2.5442,-6.24636 -9.62804,-12.03485 -16.71312,-17.82435"
        id="path2650"
        inkscape:path-effect="#path-effect2652"
-       inkscape:original-d="m 548.15126,374.64252 c -4.52776,2.34609 -9.05642,4.69114 -13.58627,7.03528 -6.15112,2.36348 -12.30311,4.72592 -18.45636,7.08746 -4.62262,-1.36598 -9.24616,-2.73293 -13.87088,-4.10094 -4.46483,0.90327 -8.93056,1.80552 -13.39748,2.7068 -4.41225,-2.27571 -8.82541,-4.55237 -13.23975,-6.83012 -4.42477,5.33589 -8.85045,10.67066 -13.27731,16.00466 -3.83439,1.53941 -7.66971,3.0778 -11.50618,4.61524 -0.48898,2.08109 -0.97895,4.16114 -1.46994,6.24027 -2.68559,0.77579 -5.37213,1.55056 -8.05977,2.32436 -1.89816,2.15407 -3.79729,4.3071 -5.6975,6.45921 -7.69104,7.39039 -15.38293,14.77963 -23.07613,22.16817 -5.34474,-0.569 -10.69016,-1.13896 -16.03691,-1.70995 -3.54252,2.91217 -7.08597,5.82329 -10.63056,8.73353 -1.89269,2.77776 -3.78627,5.55433 -5.68097,8.3301 -3.12433,1.8948 -6.24944,3.78847 -9.37578,5.68128 2.29186,-4.23918 4.58216,-8.47832 6.87241,-12.72023 -4.34978,-3.49488 -8.69781,-6.98857 -13.04977,-10.4856 -3.20709,-2.95601 -6.4144,-5.91231 -9.62198,-8.86894"
-       sodipodi:nodetypes="ccccccccccccccccccc" />
+       inkscape:original-d="m 548.15126,374.64252 c -4.52776,2.34609 -9.05642,4.69114 -13.58627,7.03528 -6.15112,2.36348 -12.30311,4.72592 -18.45636,7.08746 -4.62262,-1.36598 -9.24616,-2.73293 -13.87088,-4.10094 -4.46483,0.90327 -8.93056,1.80552 -13.39748,2.7068 -4.41225,-2.27571 -8.82541,-4.55237 -13.23975,-6.83012 -4.42477,5.33589 -8.85045,10.67066 -13.27731,16.00466 -3.83439,1.53941 -7.66971,3.0778 -11.50618,4.61524 -0.48898,2.08109 -0.97895,4.16114 -1.46994,6.24027 -2.68559,0.77579 -5.37213,1.55056 -8.05977,2.32436 -1.89816,2.15407 -3.79729,4.3071 -5.6975,6.45921 -7.69104,7.39039 -15.38293,14.77963 -23.07613,22.16817 -5.34474,-0.569 -10.69016,-1.13896 -16.03691,-1.70995 -3.32451,3.06331 -6.64996,6.12557 -9.97654,9.18695 -1.84443,2.16926 -3.68975,4.33739 -5.53619,6.50466 -2.74269,4.8926 -5.48619,9.78385 -8.23088,14.67446 1.99549,-6.70319 3.98985,-13.40691 5.98334,-20.1121 -7.08317,-5.78777 -14.16701,-11.57626 -21.252,-17.36587"
+       sodipodi:nodetypes="cccccccccccccccccc" />
     <path
        style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 510.3413,644.81965 c -1.31036,-12.57817 -2.6208,-25.15716 -3.45715,-34.88104 -0.83635,-9.72389 -1.19848,-16.59182 -1.96465,-21.7919 -0.76616,-5.20007 -1.93666,-8.73216 -2.45553,-15.99521 -0.51887,-7.26304 -0.38569,-18.25632 -1.71954,-26.184 -1.33384,-7.92768 -4.1353,-12.78955 -6.93748,-17.65268"
@@ -1203,10 +1203,10 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="display:inline;fill:none;stroke:#ff00ff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 351.93126,432.31776 c 4.26205,3.75424 8.52392,7.50833 11.49957,10.18361 2.97566,2.67529 4.66672,4.27315 5.80216,8.31182 1.13545,4.03866 1.71553,10.51292 3.87796,12.23132 2.16244,1.71841 5.89568,-1.31588 9.84504,-5.58365 3.94935,-4.26776 8.0818,-9.73377 14.14834,-12.8389 6.06655,-3.10513 14.05765,-3.83812 19.05071,-5.57335 4.99306,-1.73524 6.98862,-4.47276 9.32071,-4.01773 2.33208,0.45504 4.9995,4.1017 7.66614,7.7473"
+       d="m 352.56172,432.94835 c 4.52776,3.89287 9.05768,7.7876 12.17977,10.90792 3.12209,3.12032 4.84266,5.47168 6.1076,9.60813 1.26494,4.13646 2.07286,10.04865 4.15347,10.98486 2.08061,0.93621 5.43372,-3.10958 9.27931,-7.80388 3.84559,-4.69431 8.19037,-10.04529 14.16497,-12.77312 5.9746,-2.72783 13.57514,-2.8287 18.34772,-4.41585 4.77257,-1.58716 6.71752,-4.66045 8.97135,-4.35409 2.25383,0.30635 4.81528,3.99163 7.37598,7.67583"
        id="path2724-5"
        inkscape:path-effect="#path-effect2726-7"
-       inkscape:original-d="m 351.93126,432.31776 c 4.26199,3.75431 8.52386,7.50839 12.78338,11.26029 1.69182,1.59864 3.38288,3.1965 5.07319,4.7936 0.58152,6.48012 1.1616,12.95438 1.74129,19.43452 3.74516,-3.04216 7.4784,-6.07645 11.22732,-9.1253 4.15002,-5.48693 8.28246,-10.95294 12.42222,-16.43094 7.99232,-0.73201 15.98342,-1.46501 23.97388,-2.19904 1.99669,-2.73669 3.99225,-5.47422 5.98694,-8.21291 2.66852,3.64781 5.33594,7.29447 8.00241,10.9402"
+       inkscape:original-d="m 352.56172,432.94835 c 4.52769,3.89295 9.05761,7.78768 13.58134,11.67694 1.72069,2.35117 3.44126,4.70254 5.16179,7.05421 0.81002,5.92124 1.61795,11.83343 2.42576,17.75111 3.35365,-4.04424 6.70675,-8.09003 10.05516,-12.13236 4.34278,-5.34629 8.68756,-10.69727 13.03432,-16.05293 7.60136,-0.10016 15.2019,-0.20075 22.802,-0.30263 1.94621,-3.0727 3.89116,-6.14599 5.8353,-9.22058 2.56255,3.68642 5.124,7.3717 7.6845,11.05604"
        sodipodi:nodetypes="ccccccccc" />
     <path
        style="fill:none;stroke:#ffcc00;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1463,11 +1463,11 @@
        inkscape:path-effect="#path-effect27224-5-4-2-3-1"
        inkscape:original-d="m 386.87226,465.47454 c -12.92676,3.46348 -38.77206,10.39182 -38.77206,10.39182" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 328.77131,456.146 c 8.54431,-9.3534 17.08873,-18.70692 25.63322,-28.06052"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4.00001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 328.77132,456.14074 c 8.5429,-8.91909 17.08586,-17.83823 25.62883,-26.75739"
        id="path88646"
        inkscape:path-effect="#path-effect88648"
-       inkscape:original-d="m 328.77131,456.146 c 8.54578,-9.35205 17.09019,-18.70558 25.63322,-28.06052"
+       inkscape:original-d="m 328.77132,456.14074 c 8.54431,-8.91774 17.08726,-17.83689 25.62883,-26.75739"
        sodipodi:nodetypes="cc" />
   </g>
   <g
@@ -1513,7 +1513,7 @@
            transform="translate(116.3832,175.26624)"><tspan
              x="614.58203"
              y="146.1769"
-             id="tspan2237">50 km</tspan></text>
+             id="tspan1704">50 km</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -1524,10 +1524,10 @@
          y="0"><tspan
            x="642.76666"
            y="129.34346"
-           id="tspan2239">Map of Serbian suburban train lines </tspan><tspan
+           id="tspan1706">Map of Serbian suburban train lines </tspan><tspan
            x="702.16919"
            y="151.38635"
-           id="tspan2241">operated by SrbijaVoz</tspan></text>
+           id="tspan1708">operated by SrbijaVoz</tspan></text>
       <text
          xml:space="preserve"
          id="text55467"
@@ -1535,7 +1535,7 @@
          transform="translate(97.190705,182.583)"><tspan
            x="606.94727"
            y="182.38164"
-           id="tspan2243">Last update: 2025-12-16</tspan></text>
+           id="tspan1710">Last update: 2025-12-16</tspan></text>
       <text
          xml:space="preserve"
          id="text3267"
@@ -1543,7 +1543,7 @@
          transform="translate(-497.48597,1198.7761)"><tspan
            x="614.58203"
            y="140.11103"
-           id="tspan2245">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
+           id="tspan1713">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
       <text
          xml:space="preserve"
          id="text3267-4"
@@ -1551,7 +1551,7 @@
          transform="translate(-497.62997,1209.041)"><tspan
            x="614.58203"
            y="140.11103"
-           id="tspan2247">Contact: telegram @nikolai_622</tspan></text>
+           id="tspan1715">Contact: telegram @nikolai_622</tspan></text>
       <g
          id="g79734">
         <text
@@ -1561,7 +1561,7 @@
            transform="translate(89.403146,7.7395717)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2249">— terminal station</tspan></text>
+             id="tspan1717">— terminal station</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1589,7 +1589,7 @@
            transform="translate(89.403146,26.211985)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2251">— transfer station</tspan></text>
+             id="tspan1719">— transfer station</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1641,11 +1641,11 @@
            transform="translate(89.525543,66.223459)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2253">— terminal station for some trains
+             id="tspan1721">— terminal station for some trains
 </tspan><tspan
              x="606.94727"
              y="200.15842"
-             id="tspan2255">      from Belgrade or Novi Sad</tspan></text>
+             id="tspan1723">      from Belgrade or Novi Sad</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1675,7 +1675,7 @@
            transform="translate(89.669761,86.737671)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2257">— line is not operated for suburban trains</tspan></text>
+             id="tspan1725">— line is not operated for suburban trains</tspan></text>
       </g>
       <g
          id="g79739-0"
@@ -1695,11 +1695,11 @@
            transform="translate(89.669761,86.737671)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2259">— the line Novi Sad–Prijepolje Teretna
+             id="tspan1727">— the line Novi Sad–Prijepolje Teretna
 </tspan><tspan
              x="606.94727"
              y="200.15842"
-             id="tspan2261">operates only during the summer season</tspan></text>
+             id="tspan1729">operates only during the summer season</tspan></text>
       </g>
       <g
          id="g79720">
@@ -1710,7 +1710,7 @@
            transform="translate(89.403146,44.684397)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan2263">— other significant station</tspan></text>
+             id="tspan1731">— other significant station</tspan></text>
         <circle
            style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.26427;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
            id="path1239-6-7-0-8"
@@ -1827,8 +1827,8 @@
     <circle
        style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1239-9-9"
-       cx="354.15921"
-       cy="428.03525"
+       cx="355.27084"
+       cy="429.82611"
        r="5.5423169" />
     <circle
        style="fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
@@ -2618,12 +2618,12 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="355.94592"
-       y="418.38461"
+       x="357.05728"
+       y="421.1055"
        id="text6331-0-2-2-1-9-4"><tspan
          sodipodi:role="line"
-         x="355.38092"
-         y="418.38461"
+         x="356.49228"
+         y="421.1055"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle"
          id="tspan54453-6-6">Zemun</tspan></text>
     <text
