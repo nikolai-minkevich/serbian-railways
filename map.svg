@@ -1034,6 +1034,17 @@
        apply_no_weight="true"
        apply_with_weight="true"
        only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect27654-9"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
   </defs>
   <sodipodi:namedview
      id="namedview4"
@@ -1045,15 +1056,15 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:snap-midpoints="false"
-     inkscape:zoom="1"
-     inkscape:cx="258.5"
-     inkscape:cy="586.5"
-     inkscape:window-width="1920"
-     inkscape:window-height="996"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="251.73001"
+     inkscape:cy="441.58818"
+     inkscape:window-width="2560"
+     inkscape:window-height="1356"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer3"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1" />
   <g
@@ -1155,13 +1166,6 @@
        inkscape:original-d="m 381.05917,442.90023 c 3.58341,-3.01762 7.16592,-6.03632 10.74734,-9.05595 5.78854,-0.80846 11.57442,-1.6177 17.36272,-2.42841 2.22182,-0.86641 4.44113,-1.73323 6.66048,-2.60145 -0.59018,-5.31272 -1.18129,-10.62588 -1.77338,-15.9398 -2.99056,-3.71306 -5.98222,-7.42723 -8.97527,-11.14291 -0.69146,-8.60088 -1.38372,-17.20034 -2.07716,-25.80307 0.49629,-9.45909 0.99155,-18.91835 1.48576,-28.37792 1.19887,-2.19584 2.39693,-4.39302 3.59389,-6.59103 -2.42697,-4.39644 -4.85448,-8.79303 -7.28377,-13.19204 -5.11919,-6.47365 -10.23717,-12.94552 -15.35823,-19.42102 -7.50615,-3.34132 -15.01231,-6.6832 -22.51859,-10.02569"
        sodipodi:nodetypes="cccccccccccc" />
     <path
-       style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 234.8029,318.92377 c -5.24737,-0.82517 -10.49355,-1.65015 -17.24531,-16.05425 -6.75176,-14.40409 -15.00686,-42.3876 -18.40843,-68.28054 -3.40157,-25.89293 -1.9493,-49.69639 -0.32327,-69.39141 1.62603,-19.69501 3.42563,-35.2797 4.29866,-50.54209 0.87302,-15.262397 0.81898,-30.195187 0.76492,-45.132166"
-       id="path4590-2"
-       inkscape:path-effect="#path-effect4592-6"
-       inkscape:original-d="m 234.8029,318.92377 c -5.2475,-0.82435 -10.49368,-1.64933 -15.74217,-2.47552 -8.25425,-27.98301 -16.50935,-55.96652 -24.76531,-83.95053 1.45322,-23.80161 2.9055,-47.60507 4.35675,-71.40911 1.80085,-15.58592 3.60045,-31.17061 5.39946,-46.75983 -0.0531,-14.935701 -0.10711,-29.868491 -0.16216,-44.805466"
-       sodipodi:nodetypes="cccccc" />
-    <path
        style="display:inline;opacity:1;fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 492.34752,525.67437 c -12.2287,1.42971 -24.45827,2.85953 -38.66359,4.31959 -14.20533,1.46007 -30.38578,2.9503 -40.34016,1.21408 -9.95438,-1.73623 -13.68216,-6.69995 -16.06546,-13.39009 -2.3833,-6.69013 -3.42129,-15.10623 -7.2143,-20.15433 -3.79301,-5.04809 -10.34181,-6.72714 -17.9458,-7.96588 -7.604,-1.23873 -16.26263,-2.03687 -24.48548,-4.98193 -8.22284,-2.94505 -16.00951,-8.03745 -19.69649,-15.49052 -3.68699,-7.45307 -3.27296,-17.26652 -2.85888,-27.08112"
        id="path458621"
@@ -1181,11 +1185,18 @@
        inkscape:original-d="m 203.85612,67.335937 c 4.04136,0.83919 8.08172,1.67738 12.12108,2.514569 12.09719,-2.866556 24.19289,-5.733998 36.28783,-8.602497 4.60135,-2.268776 9.20152,-4.538461 13.80079,-6.809191" />
     <path
        style="display:inline;fill:none;stroke:#0000ff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.5, 1.5;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 231.62124,326.07808 c 3.9662,5.07881 7.93357,10.15912 12.61447,15.15866 4.68089,4.99953 10.07538,9.91894 15.97667,15.3406 5.90129,5.42167 12.3099,11.34606 16.19568,16.40927 3.88577,5.0632 5.24995,9.26542 6.36953,12.92798 1.11959,3.66257 1.99383,6.7827 3.09746,10.42345 1.10363,3.64074 2.4348,7.79608 4.11505,11.53341 1.68025,3.73733 3.70846,7.05482 7.88309,11.8846 4.17464,4.82977 10.48937,11.16522 18.8592,19.19329 8.36982,8.02806 18.78603,17.74041 26.23725,23.71039 7.45122,5.96998 11.93051,8.19276 16.41205,10.41665"
+       d="m 201.07156,70.829999 c -3.22889,35.717161 -6.45869,71.444511 -8.08752,105.002171 -1.62882,33.55766 -1.65682,64.94421 6.11162,90.98771 7.76845,26.04349 23.33396,46.74939 32.03848,58.27682 8.70451,11.52743 10.54564,13.87331 14.16418,17.50656 3.61854,3.63325 9.01277,8.55242 14.91406,13.97408 5.90129,5.42167 12.3099,11.34606 16.19568,16.40927 3.88577,5.0632 5.24995,9.26542 6.36954,12.92798 1.11958,3.66257 1.99382,6.7827 3.09745,10.42345 1.10363,3.64075 2.4348,7.79608 4.11505,11.53341 1.68025,3.73733 3.70846,7.05482 7.88309,11.8846 4.17464,4.82977 10.48937,11.16522 18.8592,19.19329 8.36982,8.02806 18.78603,17.74041 26.23725,23.71039 7.45122,5.96998 11.93051,8.19276 16.41205,10.41665"
        id="path2962-5-7"
        inkscape:path-effect="#path-effect2964-7-36"
-       inkscape:original-d="m 231.62124,326.07808 c 3.96634,5.0787 7.93371,10.15901 11.89938,15.23743 5.39594,4.92081 10.79043,9.84022 16.18395,14.75865 6.40906,5.92489 12.81768,11.84928 19.22464,17.77208 1.36523,4.20337 2.72941,8.40559 4.09285,12.60761 0.87579,3.12312 1.75002,6.24325 2.62407,9.36527 1.33317,4.15947 2.66433,8.3148 3.99489,12.47035 2.02961,3.31914 4.05782,6.63663 6.08616,9.95497 6.32065,6.34138 12.63538,12.67683 18.95312,19.0153 10.42188,9.7177 20.83809,19.43005 31.25753,29.14534 4.48283,2.22504 8.96212,4.44781 13.44386,6.6713"
-       sodipodi:nodetypes="ccccccccccc" />
+       inkscape:original-d="m 201.07156,70.829999 c -3.22781,35.717251 -6.45761,71.444611 -9.68834,107.170031 -0.027,31.3898 -0.055,62.77635 -0.084,94.15828 15.56504,20.70494 31.13056,41.41084 46.69684,62.11809 1.84272,2.34762 3.68385,4.6935 5.52456,7.03911 5.3962,4.92105 10.79043,9.84022 16.18395,14.75865 6.40906,5.92489 12.81768,11.84928 19.22464,17.77208 1.36523,4.20337 2.72941,8.40559 4.09285,12.60761 0.87579,3.12312 1.75002,6.24325 2.62407,9.36527 1.33317,4.15947 2.66433,8.3148 3.99489,12.47035 2.02961,3.31914 4.05782,6.63663 6.08616,9.95497 6.32065,6.34138 12.63538,12.67683 18.95312,19.0153 10.42188,9.7177 20.83809,19.43005 31.25753,29.14534 4.48283,2.22504 8.96212,4.44781 13.44386,6.6713"
+       sodipodi:nodetypes="cccccccccccccc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 234.8029,318.92377 c -3.33458,-2.78247 -6.66853,-5.56441 -11.42798,-13.10137 -4.75945,-7.53696 -10.94113,-19.82519 -15.79278,-32.83892 -4.85164,-13.01373 -8.37144,-26.74956 -9.52541,-46.31006 -1.15396,-19.56051 0.0582,-44.94877 1.45163,-64.64402 1.39347,-19.69525 2.96814,-33.69591 3.72868,-48.16611 0.76053,-14.470208 0.70649,-29.402997 0.65243,-44.339976"
+       id="path4590-2"
+       inkscape:path-effect="#path-effect4592-6"
+       inkscape:original-d="m 234.8029,318.92377 c -3.33466,-2.78237 -6.66861,-5.56432 -10.00487,-8.34835 -6.18216,-12.29018 -12.36385,-24.57841 -18.54782,-36.8702 -3.51901,-13.73565 -7.03881,-27.47148 -10.5594,-41.2075 1.213,-25.38476 2.42513,-50.77302 3.63623,-76.16178 1.57589,-14.00166 3.15056,-28.00233 4.72459,-42.00716 -0.0531,-14.935701 -0.10711,-29.868491 -0.16216,-44.805466"
+       sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:none;stroke:#008000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 203.85612,67.335937 c 7.02632,8.05129 14.05171,16.101518 21.60271,23.974594 7.55101,7.873075 15.6272,15.568779 22.38591,20.279969 6.7587,4.71118 12.19966,6.43831 17.41321,7.48723 5.21355,1.04893 10.19811,1.41994 14.72678,1.13566 4.52868,-0.28427 8.5921,-1.22292 12.554,-1.98437 3.9619,-0.76144 7.81955,-1.34515 10.50892,1.99197 2.68937,3.33711 4.21074,10.59351 5.3498,16.2876 1.13905,5.69408 1.89576,9.82556 4.0519,14.88768 2.15613,5.06211 5.71103,11.05449 10.23047,15.20466 4.51944,4.15017 10.00261,6.45861 13.64783,8.45853 3.64523,1.99993 5.45245,3.69073 11.9026,-0.75303 6.45014,-4.44376 17.54365,-15.02076 28.63735,-25.59793"
@@ -1302,12 +1313,6 @@
        inkscape:path-effect="#path-effect27354"
        inkscape:original-d="m 759.54678,735.40622 c 4.65712,-6.4274 9.31324,-12.85579 13.96835,-19.28519 0.0514,-3.45998 0.10182,-6.92083 0.15123,-10.38275 0.22197,-3.63979 0.44293,-7.28044 0.6629,-10.92216 3.69147,-1.19002 7.3818,-2.381 11.0712,-3.573 0.7463,-1.71813 1.49158,-3.43719 2.23588,-5.15728 2.85689,-1.02792 5.71267,-2.0568 8.5675,-3.0867 -0.37672,-2.56082 -0.75442,-5.12253 -1.13313,-7.68529 2.02897,-1.21902 4.05686,-2.43899 6.0838,-3.65998 6.96044,2.51723 13.9196,5.03336 20.8779,7.54854 -0.22658,-4.366 -0.45414,-8.73282 -0.68271,-13.10073 2.69883,-0.81922 5.39655,-1.63941 8.09332,-2.46061 -0.0134,-6.60852 -0.0279,-13.21778 -0.0433,-19.82816 -2.72419,-0.63649 -5.44926,-1.27395 -8.17539,-1.91243 -1.58573,-2.60916 -3.17239,-5.21922 -4.76008,-7.83033 -0.40506,-2.03441 -0.8111,-4.06975 -1.21814,-6.10612 5.4944,-4.22037 10.98758,-8.44156 16.47987,-12.66384 1.61702,0.70366 3.23297,1.40628 4.84796,2.10792" />
     <path
-       style="fill:none;stroke:#d40055;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 754.31006,730.94031 c 3.23416,8.5744 6.46788,17.1476 8.59555,23.68377 2.12767,6.53618 3.14945,11.03519 3.34266,15.10691 0.19321,4.07172 -0.44174,7.71628 -1.25267,11.79743 -0.81092,4.08115 -1.79775,8.5987 -2.69326,13.54803 -0.8955,4.94933 -1.69967,10.33006 -3.45718,17.16595 -1.75752,6.8359 -4.46817,15.12675 -8.39527,19.66993 -3.92709,4.54318 -9.07138,5.33922 -12.32004,7.23143 -3.24865,1.89221 -4.60047,4.87987 -5.46992,7.40252 -0.86946,2.52264 -1.25656,4.57981 -3.04538,6.19967 -1.78881,1.61985 -4.9799,2.80329 -5.62244,6.00497 -0.64254,3.20167 1.26356,8.41991 2.059,12.29926 0.79545,3.87934 0.48076,6.41991 -2.38592,8.46906 -2.86667,2.04914 -8.28588,3.60781 -11.5249,5.8859 -3.23902,2.2781 -4.29684,5.27469 -5.5118,7.14702 -1.21497,1.87233 -2.58756,2.62106 -3.20793,3.92467 -0.62037,1.30362 -0.48822,3.16078 -2.19782,3.22275 -1.7096,0.062 -5.26192,-1.6707 -7.51725,-3.70924 -2.25533,-2.03855 -3.21286,-4.38345 -5.33526,-5.18769 -2.1224,-0.80423 -5.40976,-0.0664 -8.04454,2.52231 -2.63477,2.58871 -4.61588,7.02749 -6.59681,11.46589"
-       id="path27502"
-       inkscape:path-effect="#path-effect27504"
-       inkscape:original-d="m 754.31006,730.94031 c 3.23471,8.57419 6.46842,17.14739 9.70113,25.71958 1.02282,4.5002 2.0446,8.99921 3.06541,13.49732 -0.63398,3.6457 -1.26893,7.29026 -1.90489,10.93388 -0.98587,4.51873 -1.9727,9.03628 -2.96055,13.55291 -0.8032,5.38195 -1.60736,10.76268 -2.41255,16.14251 -2.70977,8.29218 -5.42042,16.58303 -8.13214,24.87305 -5.1435,0.79707 -10.28779,1.59312 -15.43319,2.38818 -1.35087,2.98878 -2.70269,5.97644 -4.05554,8.96316 -0.38612,2.05824 -0.77323,4.11541 -1.16134,6.17161 -3.19021,1.18449 -6.3813,2.36794 -9.57345,3.55041 1.90718,5.21946 3.81328,10.43771 5.71842,15.65507 -0.3137,2.54167 -0.62839,5.08224 -0.94409,7.62185 -5.41842,1.55973 -10.83763,3.1184 -16.25795,4.6761 -1.05686,2.99772 -2.11467,5.99432 -3.17351,8.98998 -1.37165,0.74976 -2.74424,1.49849 -4.11786,2.24623 0.13315,1.85823 0.2653,3.71539 0.39645,5.57158 -3.55147,-1.73175 -7.10379,-3.46443 -10.65718,-5.19815 -0.95656,-2.344 -1.91409,-4.6889 -2.87264,-7.03486 -3.2865,0.73886 -6.57386,1.47669 -9.86229,2.21354 -1.98018,4.43995 -3.96128,8.87873 -5.94342,13.31659" />
-    <path
        style="fill:none;stroke:#00d455;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 421.36833,781.10198 c -5.47204,1.23529 -10.94482,2.47075 -14.8276,4.29408 -3.88277,1.82334 -6.17469,4.23425 -8.59237,9.88982 -2.41768,5.65557 -4.96082,14.55475 -3.47589,21.84911 1.48493,7.29436 6.99657,12.98315 9.22243,18.39104 2.22586,5.40788 1.16702,10.5348 2.70365,16.21777 1.53664,5.68298 5.66769,11.92127 6.58854,18.2525 0.92084,6.33123 -1.36755,12.7556 -1.51486,17.38524 -0.14731,4.62963 1.84543,7.4637 1.07179,9.88938 -0.77364,2.42569 -4.31309,4.44416 -5.60236,6.93459 -1.28927,2.49043 -0.32838,5.45127 2.08554,9.73952 2.41393,4.28826 6.28032,9.9037 8.28742,13.81684 2.0071,3.91314 2.15554,6.12387 2.30391,8.33359"
        id="path27652"
@@ -1334,7 +1339,7 @@
        inkscape:original-d="m 229.42354,744.20629 c 0.34692,3.73736 1.03772,11.21041 1.03772,11.21041"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#ff6600;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ff9955;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 236.07725,324.1765 c 4.51987,4.70401 9.76256,10.25344 18.63653,19.46338 7.43999,7.72166 19.54004,17.4442 24.15043,23.49136 9.04259,11.8606 11.65014,22.55355 10.95307,23.69481 -4.46773,7.31459 -22.0964,9.46967 -25.02175,9.33847 -2.3519,-0.10548 -14.42276,1.59186 -15.96,2.06706 -3.81249,1.17854 -12.09067,1.9528 -26.99843,1.63067 -6.82102,-0.1474 -17.77269,0.66507 -26.48042,-1.97745 -11.72584,-3.55842 -8.52261,-1.74782 -19.18583,-5.7612 -5.11405,-1.92481 -24.42275,-10.05051 -29.75291,-12.75536 -9.02676,-4.58074 -17.89572,-8.80557 -24.42086,-13.12815 -4.8513,-3.21374 -7.89131,-5.9187 -9.57914,-6.18043"
        id="path3276"
        sodipodi:nodetypes="cssssssssssc" />
@@ -1383,10 +1388,17 @@
        inkscape:original-d="m 673.72888,904.79085 c 10.76102,1.33564 21.52105,2.67029 32.28007,4.00393 3.5095,-3.09211 7.01785,-6.1851 10.52528,-9.27915 5.31861,-0.38277 10.636,-0.76651 15.95251,-1.15127 7.87836,5.9693 15.7554,11.93736 23.6316,17.90453 1.15128,5.26623 2.30151,10.53124 3.45076,15.79536 8.53568,-1.37103 17.07001,-2.74301 25.60351,-4.11601 5.90725,0.76277 11.81327,1.52451 17.71841,2.28526 6.71586,1.82269 13.43046,3.64431 20.14419,5.46496 4.67649,11.18535 9.3518,22.36925 14.0262,33.55238 5.6958,6.27017 11.39037,12.53908 17.08406,18.80713 5.82095,1.74596 11.64067,3.49086 17.4595,5.2348 3.49554,2.06967 6.98994,4.13827 10.4834,6.2059 0.54479,1.70763 1.08856,3.41413 1.63133,5.11973" />
     <path
        style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 670.94426,908.1864 c -1.55081,3.87954 -3.1014,7.75855 -3.69369,13.50648 -0.59229,5.74793 -0.22655,13.36394 3.24997,21.29414 3.47653,7.9302 10.06274,16.17406 13.04116,24.25944 2.97842,8.08538 2.3499,16.01198 6.86377,25.39583 4.51386,9.38381 14.16869,20.22421 21.48984,28.69811 7.32115,8.4739 12.30821,14.5808 13.73923,19.8093 1.43102,5.2285 -0.69295,9.5789 -3.41361,15.2426 -2.72066,5.6637 -6.03786,12.6404 -7.97009,19.2943 -1.93223,6.6539 -2.47959,12.9843 -4.69242,20.6168 -2.21283,7.6325 -6.09086,16.5672 -10.27879,23.0031 -4.18793,6.4358 -8.68584,10.3732 -14.02688,14.2363 -5.34105,3.863 -11.52512,7.6516 -14.9463,11.295 -3.42117,3.6434 -4.07888,7.1404 -6.09254,8.8885 -2.01366,1.7481 -5.38429,1.7481 -9.98998,4.266 -4.60568,2.518 -10.44521,7.5537 -12.48271,12.1052 -2.03751,4.5516 -0.27335,8.6174 -0.96413,13.0489 -0.69078,4.4315 -3.83573,9.2294 -5.55746,13.4932 -1.72174,4.2638 -2.02026,7.9924 -1.69946,11.6953 0.32081,3.703 1.26052,7.3796 1.72116,10.5327 0.46065,3.1532 0.44248,5.7828 0.42432,8.4114"
+       d="m 678.09219,957.61022 c 3.01987,3.2657 6.03866,6.53023 7.2333,12.12593 1.19463,5.59569 0.56611,13.52229 5.07998,22.90614 4.51386,9.38381 14.16869,20.22421 21.48984,28.69811 7.32115,8.4739 12.30821,14.5808 13.73923,19.8093 1.43102,5.2285 -0.69295,9.5789 -3.41361,15.2426 -2.72066,5.6637 -6.03786,12.6404 -7.97009,19.2943 -1.93223,6.6539 -2.47959,12.9843 -4.69242,20.6168 -2.21283,7.6325 -6.09086,16.5672 -10.27879,23.0031 -4.18793,6.4358 -8.68584,10.3732 -14.02688,14.2363 -5.34105,3.863 -11.52512,7.6516 -14.9463,11.295 -3.42117,3.6434 -4.07888,7.1404 -6.09254,8.8885 -2.01366,1.7481 -5.38429,1.7481 -9.98998,4.266 -4.60568,2.518 -10.44521,7.5537 -12.48271,12.1052 -2.03751,4.5516 -0.27335,8.6174 -0.96413,13.0489 -0.69078,4.4315 -3.83573,9.2294 -5.55746,13.4932 -1.72174,4.2638 -2.02026,7.9924 -1.69946,11.6953 0.32081,3.703 1.26052,7.3796 1.72116,10.5327 0.46065,3.1532 0.44248,5.7828 0.42432,8.4114"
        id="path460823"
        inkscape:path-effect="#path-effect460825"
-       inkscape:original-d="m 670.94426,908.1864 c -1.5496,3.88002 -3.10019,7.75903 -4.65179,11.63705 0.36676,7.61731 0.7325,15.23332 1.09725,22.84848 6.58747,8.24519 13.17368,16.48905 19.75902,24.73208 -0.62754,7.92792 -1.25606,15.85452 -1.8856,23.78028 9.65624,10.84181 19.3111,21.68211 28.96514,32.52171 4.98829,6.1082 9.97537,12.2151 14.96155,18.3212 -2.12306,4.3516 -4.24704,8.702 -6.37206,13.0515 -3.3163,6.9779 -6.63347,13.9546 -9.9517,20.9303 -0.54638,6.3316 -1.09373,12.662 -1.6421,18.9914 -3.87717,8.936 -7.75519,17.8707 -11.63429,26.8045 -4.49706,3.9385 -8.99494,7.8759 -13.49392,11.8123 -6.18333,3.7898 -12.36741,7.5784 -18.55261,11.3661 -0.65673,3.4981 -1.31442,6.9951 -1.97314,10.4911 -3.36976,10e-4 -6.74039,10e-4 -10.11208,0 -5.83878,5.0369 -11.67832,10.0726 -17.51898,15.1075 1.76523,4.067 3.5294,8.1328 5.2926,12.1977 -3.14408,4.7991 -6.28903,9.597 -9.43504,14.394 -0.29754,3.7299 -0.59607,7.4585 -0.8956,11.1863 0.94077,3.6778 1.88049,7.3544 2.81924,11.0302 -0.0172,2.6307 -0.0353,5.2603 -0.0545,7.8889" />
+       inkscape:original-d="m 678.09219,957.61022 c 3.01991,3.26566 6.0387,6.53019 9.05655,9.79379 -0.62754,7.92792 -1.25606,15.85452 -1.8856,23.78028 9.65624,10.84181 19.3111,21.68211 28.96514,32.52171 4.98829,6.1082 9.97537,12.2151 14.96155,18.3212 -2.12306,4.3516 -4.24704,8.702 -6.37206,13.0515 -3.3163,6.9779 -6.63347,13.9546 -9.9517,20.9303 -0.54638,6.3316 -1.09373,12.662 -1.6421,18.9914 -3.87717,8.936 -7.75519,17.8707 -11.63429,26.8045 -4.49706,3.9385 -8.99494,7.8759 -13.49392,11.8123 -6.18333,3.7898 -12.36741,7.5784 -18.55261,11.3661 -0.65673,3.4981 -1.31442,6.9951 -1.97314,10.4911 -3.36976,10e-4 -6.74039,10e-4 -10.11208,0 -5.83878,5.0369 -11.67832,10.0726 -17.51898,15.1075 1.76523,4.067 3.5294,8.1328 5.2926,12.1977 -3.14408,4.7991 -6.28903,9.597 -9.43504,14.394 -0.29754,3.7299 -0.59607,7.4585 -0.8956,11.1863 0.94077,3.6778 1.88049,7.3544 2.81924,11.0302 -0.0172,2.6307 -0.0353,5.2603 -0.0545,7.8889"
+       sodipodi:nodetypes="ccccccccccccccccccc" />
+    <path
+       style="display:inline;fill:none;stroke:#d40055;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 754.31006,730.94031 c 3.23416,8.5744 6.46788,17.1476 8.59555,23.68377 2.12767,6.53618 3.14945,11.03519 3.34266,15.10691 0.19321,4.07172 -0.44174,7.71628 -1.25267,11.79743 -0.81092,4.08115 -1.79775,8.5987 -2.69326,13.54803 -0.8955,4.94933 -1.69967,10.33006 -3.45718,17.16595 -1.75752,6.8359 -4.46817,15.12675 -8.39527,19.66993 -3.92709,4.54318 -9.07138,5.33922 -12.32004,7.23143 -3.24865,1.89221 -4.60047,4.87987 -5.46992,7.40252 -0.86946,2.52264 -1.25656,4.57981 -3.04538,6.19967 -1.78881,1.61985 -4.9799,2.80329 -5.62244,6.00497 -0.64254,3.20167 1.26356,8.41991 2.059,12.29926 0.79545,3.87934 0.48076,6.41991 -2.38592,8.46906 -2.86667,2.04914 -8.28588,3.60781 -11.5249,5.8859 -3.23902,2.2781 -4.29684,5.27469 -5.5118,7.14702 -1.21497,1.87233 -2.58756,2.62106 -3.20793,3.92467 -0.62037,1.30362 -0.48822,3.16078 -2.19782,3.22275 -1.7096,0.062 -5.26192,-1.6707 -7.51725,-3.70924 -2.25533,-2.03855 -3.21286,-4.38345 -5.33526,-5.18769 -2.1224,-0.80423 -5.40976,-0.0664 -8.04454,2.52231 -2.63477,2.58871 -4.61588,7.02749 -6.59681,11.46589"
+       id="path27502"
+       inkscape:path-effect="#path-effect27504"
+       inkscape:original-d="m 754.31006,730.94031 c 3.23471,8.57419 6.46842,17.14739 9.70113,25.71958 1.02282,4.5002 2.0446,8.99921 3.06541,13.49732 -0.63398,3.6457 -1.26893,7.29026 -1.90489,10.93388 -0.98587,4.51873 -1.9727,9.03628 -2.96055,13.55291 -0.8032,5.38195 -1.60736,10.76268 -2.41255,16.14251 -2.70977,8.29218 -5.42042,16.58303 -8.13214,24.87305 -5.1435,0.79707 -10.28779,1.59312 -15.43319,2.38818 -1.35087,2.98878 -2.70269,5.97644 -4.05554,8.96316 -0.38612,2.05824 -0.77323,4.11541 -1.16134,6.17161 -3.19021,1.18449 -6.3813,2.36794 -9.57345,3.55041 1.90718,5.21946 3.81328,10.43771 5.71842,15.65507 -0.3137,2.54167 -0.62839,5.08224 -0.94409,7.62185 -5.41842,1.55973 -10.83763,3.1184 -16.25795,4.6761 -1.05686,2.99772 -2.11467,5.99432 -3.17351,8.98998 -1.37165,0.74976 -2.74424,1.49849 -4.11786,2.24623 0.13315,1.85823 0.2653,3.71539 0.39645,5.57158 -3.55147,-1.73175 -7.10379,-3.46443 -10.65718,-5.19815 -0.95656,-2.344 -1.91409,-4.6889 -2.87264,-7.03486 -3.2865,0.73886 -6.57386,1.47669 -9.86229,2.21354 -1.98018,4.43995 -3.96128,8.87873 -5.94342,13.31659" />
     <path
        style="fill:none;stroke:#cccccc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 668.41496,936.17686 c -0.37395,0.21966 -0.74821,0.43949 -5.21856,2.11338 -4.47036,1.67389 -13.03673,4.80173 -21.94992,4.15191 -8.9132,-0.64982 -18.17332,-5.07796 -28.29914,-8.47577 -10.12583,-3.39781 -21.1167,-5.76478 -29.55648,-4.89379 -8.43979,0.87099 -14.32709,4.98023 -18.04494,9.19327 -3.71785,4.21304 -5.26568,8.52892 -7.18093,11.56265 -1.91525,3.03374 -4.19816,4.78586 -5.1677,8.74776 -0.96954,3.9619 -0.62558,10.13213 -0.50757,16.84419 0.118,6.71205 0.0101,13.96558 -0.88849,20.57045 -0.89862,6.60489 -2.58775,12.56109 -4.37964,15.38279 -1.79189,2.8217 -3.68777,2.5093 -5.58481,2.1967"
@@ -1491,6 +1503,13 @@
        inkscape:path-effect="#path-effect27224-5-4-2"
        inkscape:original-d="m 104.33728,237.89731 c -0.79745,8.29635 -2.389,24.88558 -2.389,24.88558" />
     <path
+       style="display:inline;fill:none;stroke:#ff6600;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 672.73026,908.17544 c -3.47578,5.64433 -6.95174,11.28893 -5.84983,20.15079 1.1019,8.86186 6.78019,20.93913 12.45905,33.0176"
+       id="path27652-7"
+       sodipodi:nodetypes="csc"
+       inkscape:original-d="m 672.73026,908.17544 c 0,0 -6.95057,11.28965 -10.42735,16.93298 5.67985,12.07947 17.03657,36.23541 17.03657,36.23541"
+       inkscape:path-effect="#path-effect27654-9" />
+    <path
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 252.37118,316.51543 c -10.98748,4.41638 -21.97089,8.83112 -32.95633,13.24668"
        id="path27222-9-7-6"
@@ -1553,7 +1572,7 @@
            transform="translate(116.3832,175.26624)"><tspan
              x="614.58203"
              y="146.1769"
-             id="tspan5493">50 km</tspan></text>
+             id="tspan1381">50 km</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -1564,10 +1583,10 @@
          y="0"><tspan
            x="642.76666"
            y="129.34346"
-           id="tspan5495">Map of Serbian suburban train lines </tspan><tspan
+           id="tspan1383">Map of Serbian suburban train lines </tspan><tspan
            x="702.16919"
            y="151.38635"
-           id="tspan5497">operated by SrbijaVoz</tspan></text>
+           id="tspan1385">operated by SrbijaVoz</tspan></text>
       <text
          xml:space="preserve"
          id="text55467"
@@ -1575,7 +1594,7 @@
          transform="translate(97.190705,182.583)"><tspan
            x="606.94727"
            y="182.38164"
-           id="tspan5499">Last update: 2025-12-16</tspan></text>
+           id="tspan1387">Last update: 2026-10-10</tspan></text>
       <text
          xml:space="preserve"
          id="text3267"
@@ -1583,7 +1602,7 @@
          transform="translate(-497.48597,1198.7761)"><tspan
            x="614.58203"
            y="140.11103"
-           id="tspan5501">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
+           id="tspan1389">Inspired by map of Serbian Railways made by Maximilian Dörrbecker</tspan></text>
       <text
          xml:space="preserve"
          id="text3267-4"
@@ -1591,7 +1610,7 @@
          transform="translate(-497.62997,1209.041)"><tspan
            x="614.58203"
            y="140.11103"
-           id="tspan5503">Contact: telegram @nikolai_622</tspan></text>
+           id="tspan1391">Contact: telegram @nikolai_622</tspan></text>
       <g
          id="g79734">
         <text
@@ -1601,7 +1620,7 @@
            transform="translate(89.403146,7.7395717)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5505">— terminal station</tspan></text>
+             id="tspan1393">— terminal station</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1629,7 +1648,7 @@
            transform="translate(89.403146,26.211985)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5507">— transfer station</tspan></text>
+             id="tspan1395">— transfer station</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1681,11 +1700,11 @@
            transform="translate(89.525543,66.223459)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5509">— terminal station for some trains
+             id="tspan1397">— terminal station for some trains
 </tspan><tspan
              x="606.94727"
              y="200.15842"
-             id="tspan5511">      from Belgrade or Novi Sad</tspan></text>
+             id="tspan1399">      from Belgrade or Novi Sad</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -1715,7 +1734,7 @@
            transform="translate(89.669761,86.737671)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5513">— line is not operated for suburban trains</tspan></text>
+             id="tspan1401">— line is not operated for suburban trains</tspan></text>
       </g>
       <g
          id="g79739-0"
@@ -1735,11 +1754,11 @@
            transform="translate(89.669761,86.737671)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5515">— the line Novi Sad–Prijepolje Teretna
+             id="tspan1403">— the line Subotica–Prijepolje Teretna
 </tspan><tspan
              x="606.94727"
              y="200.15842"
-             id="tspan5517">operates only during the summer season</tspan></text>
+             id="tspan1405">operates only during the summer season</tspan></text>
       </g>
       <g
          id="g79720">
@@ -1750,7 +1769,7 @@
            transform="translate(89.403146,44.684397)"><tspan
              x="606.94727"
              y="182.38164"
-             id="tspan5519">— other significant station</tspan></text>
+             id="tspan1407">— other significant station</tspan></text>
         <circle
            style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.26427;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
            id="path1239-6-7-0-8"
@@ -1893,6 +1912,12 @@
        id="path1239-93"
        cx="418.71985"
        cy="933.03735"
+       r="5.5423169" />
+    <circle
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1239-93-5"
+       cx="680.1167"
+       cy="959.44879"
        r="5.5423169" />
     <circle
        style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1.26427;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
@@ -2064,6 +2089,12 @@
        cx="212.63644"
        cy="320.12347"
        r="5.5423169" />
+    <circle
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1239-1-1-0-5-3"
+       cx="224.13794"
+       cy="309.86768"
+       r="5.5423169" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Extra-Condensed';letter-spacing:-1.13px;fill:#000000;fill-opacity:1;stroke:none"
@@ -2224,20 +2255,20 @@
          id="tspan36682-1">Karavukovo</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="277.38089"
-       y="289.73132"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:start;letter-spacing:-1.13px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="255.67754"
+       y="320.8978"
        id="text6331-0-2-2-1-9"><tspan
          sodipodi:role="line"
-         x="277.38089"
-         y="289.73132"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle;fill:#000000"
-         id="tspan1740">Novi Sad</tspan><tspan
+         x="255.67754"
+         y="320.8978"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:start;text-anchor:start;fill:#000000"
+         id="tspan1744">Petrovaradin</tspan><tspan
          sodipodi:role="line"
-         x="276.81589"
-         y="305.28558"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;text-anchor:middle;fill:#000000"
-         id="tspan1744">(Petrovaradin)</tspan></text>
+         x="255.67754"
+         y="330.63971"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:condensed;font-size:10.6667px;line-height:0.65;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Light Condensed';text-align:start;letter-spacing:-0.41px;text-anchor:start;fill:#000000"
+         id="tspan956">(Novi Sad)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -2277,6 +2308,18 @@
          y="351.38757"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:extra-condensed;font-size:14.5026px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Semi-Bold Extra-Condensed';text-align:center;text-anchor:middle;stroke-width:0.999996"
          id="tspan1711">Ranžirna</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:extra-condensed;font-size:14.5026px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Semi-Bold Extra-Condensed';text-align:center;letter-spacing:-0.877922px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999996"
+       x="254.58263"
+       y="308.89328"
+       id="text6331-0-2-2-1-9-8-6-7"
+       transform="scale(1.0154928,0.98474356)"><tspan
+         sodipodi:role="line"
+         x="254.14366"
+         y="308.89328"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:extra-condensed;font-size:14.5026px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Semi-Bold Extra-Condensed';text-align:center;text-anchor:middle;stroke-width:0.999996"
+         id="tspan1711-6">TPS Novi Sad</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Light Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
@@ -2549,6 +2592,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="691.43243"
+       y="965.83868"
+       id="text6331-4-8-2"><tspan
+         sodipodi:role="line"
+         id="tspan6329-8-86-8"
+         x="691.43243"
+         y="965.83868"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed'">Leskovac</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:1.25;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';letter-spacing:-1.13px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="221.58949"
        y="927.04816"
        id="text6331-8"><tspan
@@ -2646,15 +2700,10 @@
        y="484.5773"
        id="text6331-0-2-2-1-9-85"><tspan
          sodipodi:role="line"
-         x="344.21506"
+         x="343.08505"
          y="484.5773"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:end;text-anchor:end"
-         id="tspan54453-6-06">Beograd Centar</tspan><tspan
-         sodipodi:role="line"
-         x="343.08505"
-         y="500.13156"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:end;text-anchor:end"
-         id="tspan43404">(Prokop)</tspan></text>
+         id="tspan43404">Beograd Centar</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:extra-condensed;font-size:18.6667px;line-height:0.75;font-family:'Noto Sans Tamil';-inkscape-font-specification:'Noto Sans Tamil Bold Extra-Condensed';text-align:center;letter-spacing:-1.13px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
